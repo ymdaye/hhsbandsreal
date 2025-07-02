@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import { MapPinIcon } from '@heroicons/react/24/outline';
 import Logo from './Logo';
 
 const Footer = () => {
