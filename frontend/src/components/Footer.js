@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md mx-auto lg:mx-0">
-              Excellence in Musical Education • Superior-Rated Concert Bands • Award-Winning Marching Band
+              Inspiring Young Musicians • Building Leaders Through Music • Proudly Representing Hickory
             </p>
             <div className="space-y-2">
               <div className="flex items-center justify-center lg:justify-start space-x-2">
