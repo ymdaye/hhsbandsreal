@@ -37,3 +37,5 @@ const Calendar = ({ title = "Upcoming Events" }) => {
 };
 
 export default Calendar;
+
+export default Calendar;
