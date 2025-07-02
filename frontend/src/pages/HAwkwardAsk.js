@@ -21,15 +21,6 @@ const HAwkwardAsk = () => {
     }
   ];
 
-  const impactAreas = [
-    { title: "Instrument Repairs", description: "Keeping our instruments in top playing condition", amount: "$50" },
-    { title: "Uniform Cleaning", description: "Professional cleaning and maintenance", amount: "$25" },
-    { title: "Sheet Music", description: "New arrangements and competition pieces", amount: "$75" },
-    { title: "Transportation", description: "Getting to competitions and performances", amount: "$100" },
-    { title: "Equipment", description: "Stands, cases, and performance accessories", amount: "$150" },
-    { title: "Any Amount", description: "Every dollar makes a difference!", amount: "Your Choice" }
-  ];
-
   return (
     <div className="min-h-screen bg-gray-50 pt-16">
       {/* Hero Section */}
