@@ -17,6 +17,9 @@
   ],
   "author": "Hickory High School Band Program",
   "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "netlify-cms-app": "^2.15.72",
     "uuid": "^11.1.0"
