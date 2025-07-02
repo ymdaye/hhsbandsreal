@@ -176,20 +176,20 @@ const Students = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {/* Total Amount Raised */}
               <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">$12,450</div>
+                <div className="text-4xl md:text-5xl font-bold text-white mb-2">{studentsData.campaignInfo.totalRaised}</div>
                 <div className="text-lg text-primary-100 mb-4">Total Amount Raised</div>
                 <div className="w-full bg-white/20 rounded-full h-3">
-                  <div className="bg-gradient-to-r from-yellow-400 to-orange-500 h-3 rounded-full" style={{width: '62%'}}></div>
+                  <div className="bg-gradient-to-r from-yellow-400 to-orange-500 h-3 rounded-full" style={{width: `${studentsData.campaignInfo.progressPercentage}%`}}></div>
                 </div>
-                <div className="text-sm text-primary-100 mt-2">62% of $20,000 goal</div>
+                <div className="text-sm text-primary-100 mt-2">{studentsData.campaignInfo.progressPercentage}% of {studentsData.campaignInfo.goalAmount} goal</div>
               </div>
               
               {/* Average Per Student */}
               <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">$78</div>
+                <div className="text-4xl md:text-5xl font-bold text-white mb-2">{studentsData.campaignInfo.averagePerStudent}</div>
                 <div className="text-lg text-primary-100 mb-4">Average Raised Per Student</div>
                 <div className="text-sm text-primary-100">
-                  Based on 160 participating students
+                  Based on {studentsData.campaignInfo.participatingStudents} participating students
                 </div>
                 <div className="mt-4 text-primary-100">
                   <span className="text-2xl font-bold text-yellow-300">🎵</span>
