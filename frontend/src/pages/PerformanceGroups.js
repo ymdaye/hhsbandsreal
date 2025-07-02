@@ -208,7 +208,7 @@ const PerformanceGroups = () => {
                     
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-3">Highlights:</h4>
-                      <ul className="space-y-2">
+                      <ul className="space-y-2 mb-6">
                         {ensemble.highlights.map((highlight, i) => (
                           <li key={i} className="flex items-center text-gray-700">
                             <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
@@ -216,6 +216,13 @@ const PerformanceGroups = () => {
                           </li>
                         ))}
                       </ul>
+                      
+                      <Link
+                        to={`/ensembles/${ensemble.title.toLowerCase().replace(/\s+/g, '-').replace('---', '-')}`}
+                        className="inline-flex items-center px-6 py-3 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors duration-200"
+                      >
+                        Learn More
+                      </Link>
                     </div>
                   </div>
                 </div>
