@@ -9,14 +9,14 @@ const Gallery = ({ title, images }) => {
 
   const galleryImages = images || [
     {
-      src: "https://images.pexels.com/photos/32751943/pexels-photo-32751943.jpeg",
-      alt: "Marching Band Performance",
-      caption: "Marching Band in Formation"
+      src: "http://hhsbands.org/wp-content/uploads/2014/07/collage_2017.jpg",
+      alt: "Band Collage 2017",
+      caption: "Highlights from the 2017 Season"
     },
     {
-      src: "https://images.pexels.com/photos/32751939/pexels-photo-32751939.jpeg",
-      alt: "Brass Section",
-      caption: "Brass Section Performance"
+      src: "https://hhsbands.org/wp-content/uploads/2024/11/BOA-New-Jersey-2024-2048x862.jpg",
+      alt: "BOA New Jersey 2024",
+      caption: "BOA New Jersey Championship 2024"
     },
     {
       src: "https://images.pexels.com/photos/269140/pexels-photo-269140.jpeg",
