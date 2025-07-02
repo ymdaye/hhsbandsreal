@@ -72,6 +72,7 @@ function AppContent() {
         <Route path="/guard-resources" element={<GuardResources />} />
         <Route path="/percussion-resources" element={<PercussionResources />} />
         <Route path="/winds-resources" element={<WindsResources />} />
+        <Route path="/important-documents" element={<ImportantDocuments />} />
       </Routes>
       <Footer />
     </>
