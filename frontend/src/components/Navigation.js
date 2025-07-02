@@ -22,6 +22,7 @@ const Navigation = () => {
     { 
       name: 'Parents', 
       dropdown: [
+        { name: 'HBPA Parent Info', path: '/parents' },
         { name: 'Payments', path: '/payments' },
         { name: 'Fundraising', path: '/fundraisers' }
       ]
