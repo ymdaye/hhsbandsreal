@@ -30,7 +30,7 @@ import JazzBand from "./pages/ensembles/JazzBand";
 function App() {
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -57,12 +57,10 @@ function App() {
           <Route path="/ensembles/marching-band" element={<MarchingBand />} />
           <Route path="/ensembles/jazz-band" element={<JazzBand />} />
           
-          <Route path="/test" element={<TestPage />} />
-          
           <Route path="/join" element={<div className="pt-16 min-h-screen flex items-center justify-center"><h1 className="text-4xl font-bold text-gray-900">Join the Band - Coming Soon</h1></div>} />
         </Routes>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
