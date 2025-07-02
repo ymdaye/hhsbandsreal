@@ -82,7 +82,7 @@ const Home = () => {
             <p className="text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed">
               Located in Chesapeake, Virginia, The Hickory High School Band is a multi-faceted program that includes not only superior-rated Concert Bands and Wind Ensemble, but also an award-winning Marching Band. The Hickory Marching Hawks perform at all home football games, and enter multiple competitions each year. The Concert Bands put on several concerts and perform at Band Assessment each year. The Hickory Winter Guard and Indoor Percussion programs thrive during the winter and spring months as they perform at competitions throughout Virginia.
             </p>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto mt-4">
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto mt-4 leading-relaxed">
               Located in the Hampton Roads area of Southeast Virginia, Hickory High School is located 25 miles from downtown Norfolk with easy access to Naval Station Norfolk, NAS Oceana, Virginia Beach Oceanfront and other popular Virginia destinations.
             </p>
           </motion.div>
