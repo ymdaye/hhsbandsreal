@@ -368,8 +368,28 @@ const Students = () => {
         </div>
       </section>
 
-      {/* Current Itinerary */}
+      {/* Calendar Section */}
       <section id="schedule" className="py-20 bg-primary-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Band Calendar</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Stay up-to-date with all band events, rehearsals, and performances
+            </p>
+          </motion.div>
+
+          <Calendar title="Band Events" />
+        </div>
+      </section>
+
+      {/* Current Schedule */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
