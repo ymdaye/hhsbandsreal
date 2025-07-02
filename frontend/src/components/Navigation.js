@@ -1,0 +1,97 @@
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+
+const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const navItems = [
+    { name: 'Home', path: '/' },
+    { name: 'Staff', path: '/staff' },
+    { name: 'SEVMG', path: '/sevmg' },
+    { name: 'Performance Groups', path: '/groups' },
+    { name: 'Parents', path: '/parents' },
+    { name: 'Payments', path: '/payments' },
+    { name: 'History', path: '/history' }
+  ];
+
+  return (
+    <nav className="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-primary-500 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg">HHS</span>
+            </div>
+            <span className="text-xl font-bold text-gray-900">Hickory Bands</span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:block">
+            <div className="ml-10 flex items-baseline space-x-4">
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
+                    location.pathname === item.path
+                      ? 'bg-primary-500 text-white'
+                      : 'text-gray-700 hover:bg-primary-500/10 hover:text-primary-600'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+            >
+              {isOpen ? (
+                <XMarkIcon className="block h-6 w-6" />
+              ) : (
+                <Bars3Icon className="block h-6 w-6" />
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="md:hidden"
+          >
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/90 backdrop-blur-md rounded-lg mt-2">
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
+                    location.pathname === item.path
+                      ? 'bg-primary-500 text-white'
+                      : 'text-gray-700 hover:bg-primary-500/10 hover:text-primary-600'
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </div>
+    </nav>
+  );
+};
+
+export default Navigation;
