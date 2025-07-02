@@ -17,15 +17,17 @@ const Calendar = ({ title = "Upcoming Events" }) => {
       <div className="p-6">
         <div className="relative w-full" style={{ paddingBottom: "75%" }}>
           <iframe 
-            src="https://calendar.google.com/calendar/embed?src=g9ekvje1f0son6en9i7io16rus%40group.calendar.google.com&ctz=America%2FNew_York" 
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&src=ZjhmdHJiMXZ2NTZ0MTB1bXFjOG0yZnE5azRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23616161" 
             style={{
               position: "absolute",
               top: 0,
               left: 0,
               width: "100%",
               height: "100%",
-              border: 0
+              border: "solid 1px #777"
             }}
+            width="800" 
+            height="600" 
             frameBorder="0" 
             scrolling="no"
             title="Band Calendar"
@@ -35,5 +37,7 @@ const Calendar = ({ title = "Upcoming Events" }) => {
     </motion.section>
   );
 };
+
+export default Calendar;
 
 export default Calendar;
