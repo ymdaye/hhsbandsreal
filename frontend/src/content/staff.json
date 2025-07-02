@@ -4,53 +4,59 @@
     {
       "name": "Mitchell Reed",
       "role": "Band Director",
-      "bio": "Mitchell Reed leads the Hickory High School Band Program with passion and dedication. Graduate of Virginia Commonwealth University with a Bachelor's in Music Education. Former middle school band director with 8 years of experience. Specializes in marching band design and concert band literature.",
+      "bio": "Mitchell Reed is a Band Director at Hickory High School in Chesapeake, VA. He is a native of Gloucester, Virginia and has earned a Bachelor's Degree in Music Education from Virginia Commonwealth University and a Master's Degree in Instrumental Conducting from the University of South Florida. Mr. Reed most recently served as the Director of Bands at Joe E. Newsome High School in Tampa, Florida where he led a comprehensive band and color guard program.",
       "image": "https://images.unsplash.com/photo-1571262625039-adbf7b7dd60f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHxiYW5kJTIwZGlyZWN0b3J8ZW58MHx8fHRlYWx8MTc1MTQ2NDc5NXww&ixlib=rb-4.1.0&q=85",
       "email": "mitchell.reed@cpschools.com",
       "highlights": [
-        "Graduate of Virginia Commonwealth University",
-        "8 years of middle school band experience", 
-        "Specializes in marching band design",
-        "Expert in concert band literature"
+        "Bachelor's in Music Education from Virginia Commonwealth University",
+        "Master's in Instrumental Conducting from University of South Florida",
+        "Former Director of Bands at Joe E. Newsome High School",
+        "Led program to over 200 students and superior ratings",
+        "Graduate Teaching Assistant at University of South Florida",
+        "Member of The Cadets and Jersey Surf Drum and Bugle Corps"
       ]
     },
     {
       "name": "Yvonne Daye",
       "role": "Band Director",
-      "bio": "Yvonne Daye brings exceptional expertise to the Hickory High School Band Program. Graduate of Norfolk State University with a Master's in Music Education. Former professional musician with symphony orchestra experience. Specializes in woodwind instruction and jazz ensemble direction.",
+      "bio": "Ms. Yvonne M. Daye is a Band Director at Hickory High School in Chesapeake, VA. She previously served as the Director of Bands at Maury High School, Assistant Director of the Norfolk All City Jazz Band. Ms. Daye earned her Master's in Music Education with an emphasis in conducting from Old Dominion University in Norfolk, VA and Bachelor's of Music from Virginia Commonwealth University.",
       "image": "https://images.pexels.com/photos/9310487/pexels-photo-9310487.jpeg",
       "email": "yvonne.daye@cpschools.com",
       "highlights": [
-        "Master's degree from Norfolk State University",
-        "Professional symphony orchestra experience",
-        "Woodwind instruction specialist",
-        "Jazz ensemble expertise"
+        "Master's in Music Education from Old Dominion University",
+        "Bachelor's of Music from Virginia Commonwealth University",
+        "Former Director of Bands at Maury High School",
+        "Assistant Director of Norfolk All City Jazz Band",
+        "Graduate Assistant for ODU Monarch Athletic Bands",
+        "Performed at Carnegie Hall and various prestigious venues"
       ]
     },
     {
-      "name": "Derek Johnson",
-      "role": "Assistant Band Director",
-      "bio": "Derek Johnson supports the band program with expertise in brass instruction and percussion techniques. Graduate of James Madison University with a Bachelor's in Music Performance. Former drum corps instructor with DCI experience. Specializes in marching percussion and brass pedagogy.",
+      "name": "Derick Johnson",
+      "role": "Percussion Director",
+      "bio": "Derick Johnson, a native of Newport News, Virginia, is currently in his eighth year of teaching at Crestwood Middle School in Chesapeake, Virginia. He holds both his Bachelor's and Master's degrees in Music Education from Hampton University. He currently serves as the Director of Percussion at Hickory High School, where he instructs the front ensemble, percussion ensemble, and winter drumline.",
       "image": "https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg",
       "email": "derek.johnson@cpschools.com",
+      "logo": "https://hhsbands.org/wp-content/uploads/2025/05/image001.png",
       "highlights": [
-        "Graduate of James Madison University",
-        "DCI drum corps experience",
-        "Marching percussion specialist",
-        "Brass pedagogy expertise"
+        "Bachelor's and Master's in Music Education from Hampton University",
+        "Eight years of teaching at Crestwood Middle School",
+        "Crestwood Middle School Teacher of the Year 2023",
+        "Director of Percussion at Hickory High School",
+        "Innovative Percussion Artist",
+        "Clinician and arranger for percussion ensembles nationwide"
       ]
     },
     {
       "name": "Aubrey Horstman",
-      "role": "Assistant Band Director", 
-      "bio": "Aubrey Horstman contributes to the success of the Hickory High School Band Program through dedicated instruction and mentorship. Graduate of Old Dominion University with a Bachelor's in Music Education. Former color guard performer and instructor. Specializes in visual design and student leadership development.",
+      "role": "Color Guard Director", 
+      "bio": "Aubrey Horstman contributes to the success of the Hickory High School Band Program through dedicated instruction and mentorship in color guard and visual arts education.",
       "image": "https://images.pexels.com/photos/4709822/pexels-photo-4709822.jpeg",
       "email": "aubrey.horstman@cpschools.com",
       "highlights": [
-        "Graduate of Old Dominion University",
-        "Color guard performance background",
-        "Visual design specialist",
-        "Student leadership development focus"
+        "Color Guard Director at Hickory High School",
+        "Specialist in visual arts education",
+        "Dedicated to student mentorship and development"
       ]
     }
   ]
