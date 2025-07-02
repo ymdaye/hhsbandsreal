@@ -1,0 +1,17 @@
+{
+  "name": "hickory-bands-website",
+  "version": "1.0.0",
+  "description": "Hickory High School Band Program Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm start"
+  },
+  "keywords": ["band", "music", "education", "hickory", "high-school"],
+  "author": "Hickory High School Band Program",
+  "license": "MIT",
+  "dependencies": {
+    "netlify-cms-app": "^2.15.72"
+  }
+}

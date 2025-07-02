@@ -1,0 +1,96 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/img
+public_folder: /img
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "src/content/pages/home.json"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Slug", name: "slug", widget: "string"}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            types:
+              - label: "Hero Section"
+                name: "hero"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "text"}
+                  - {label: "Background Image", name: "backgroundImage", widget: "image"}
+                  - {label: "CTA Text", name: "ctaText", widget: "string"}
+                  - {label: "CTA URL", name: "ctaUrl", widget: "string"}
+
+  - name: "staff"
+    label: "Staff"
+    file: "src/content/staff.json"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - label: "Members"
+        name: "members"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Role", name: "role", widget: "string"}
+          - {label: "Bio", name: "bio", widget: "text"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Email", name: "email", widget: "string"}
+
+  - name: "fundraisers"
+    label: "Fundraisers"
+    folder: "src/content/fundraisers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Status", name: "status", widget: "select", options: ["Active", "Planning", "Completed"]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "events"
+    label: "Events"
+    folder: "src/content/events"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "End Date", name: "endDate", widget: "datetime", required: false}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Navigation"
+        name: "navigation"
+        file: "src/content/settings/navigation.json"
+        fields:
+          - label: "Navigation Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Path", name: "path", widget: "string"}
+              - {label: "Order", name: "order", widget: "number"}
+      
+      - label: "Contact Information"
+        name: "contact"
+        file: "src/content/settings/contact.json"
+        fields:
+          - {label: "School Name", name: "schoolName", widget: "string"}
+          - {label: "Address", name: "address", widget: "text"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Website", name: "website", widget: "string"}

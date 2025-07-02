@@ -1,0 +1,14 @@
+{
+  "title": "Golf Tournament",
+  "description": "Annual golf tournament for band supporters. Enjoy a day on the course while supporting musical education.",
+  "date": "2025-05-15T08:00:00.000Z",
+  "location": "Local Golf Course",
+  "image": "/img/golf-tournament.jpg",
+  "status": "Planning",
+  "eventDetails": [
+    { "label": "Date", "value": "TBD - Spring 2025" },
+    { "label": "Format", "value": "Shotgun Start" },
+    { "label": "Location", "value": "Local Golf Course" },
+    { "label": "Entry Fee", "value": "$125 per golfer" }
+  ]
+}

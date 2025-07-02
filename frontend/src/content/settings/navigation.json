@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "name": "Home", "path": "/", "order": 1 },
+    { "name": "Staff", "path": "/staff", "order": 2 },
+    { "name": "SEVMG", "path": "/sevmg", "order": 3 },
+    { "name": "Performance Groups", "path": "/groups", "order": 4 },
+    { "name": "Parents", "path": "/parents", "order": 5 },
+    { "name": "Fundraisers", "path": "/fundraisers", "order": 6 },
+    { "name": "Payments", "path": "/payments", "order": 7 },
+    { "name": "History", "path": "/history", "order": 8 }
+  ]
+}

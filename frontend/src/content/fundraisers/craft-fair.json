@@ -1,0 +1,14 @@
+{
+  "title": "Annual Craft Fair",
+  "description": "Join us for our popular annual craft fair featuring local artisans, vendors, and delicious food.",
+  "date": "2024-11-16T09:00:00.000Z",
+  "location": "Hickory High School Cafeteria",
+  "image": "/img/craft-fair.jpg",
+  "status": "Active",
+  "eventDetails": [
+    { "label": "Date", "value": "Saturday, November 16, 2024" },
+    { "label": "Time", "value": "9:00 AM - 4:00 PM" },
+    { "label": "Location", "value": "Hickory High School Cafeteria" },
+    { "label": "Admission", "value": "Free Entry" }
+  ]
+}
