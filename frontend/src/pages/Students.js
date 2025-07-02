@@ -26,6 +26,7 @@ const Students = () => {
       description: "Access guard-specific resources, music, and performance materials",
       icon: UserGroupIcon,
       color: "from-pink-500 to-pink-600",
+      link: "/guard-resources",
       resources: [
         "Performance music tracks",
         "Choreography videos", 
@@ -38,6 +39,7 @@ const Students = () => {
       description: "Drumline and percussion ensemble materials and resources",
       icon: MusicalNoteIcon,
       color: "from-red-500 to-red-600",
+      link: "/percussion-resources",
       resources: [
         "Percussion parts and music",
         "Practice tracks",
@@ -50,6 +52,7 @@ const Students = () => {
       description: "Band music, parts, and resources for wind instruments",
       icon: MusicalNoteIcon,
       color: "from-blue-500 to-blue-600",
+      link: "/winds-resources",
       resources: [
         "Concert and marching music",
         "Individual part files",
