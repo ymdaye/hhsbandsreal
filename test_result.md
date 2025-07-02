@@ -174,10 +174,14 @@ metadata:
 test_plan:
   current_focus:
     - "Update Staff.js to display highlights from biographies instead of full descriptions"
+    - "Implement Students page with detailed content including guard/percussion/winds cards, music/video links, itinerary, and password protection"
+    - "Populate News page with latest band news and announcements"
+    - "Implement Sponsors page with sponsor details and Ocean Storage logo integration"
+    - "Integrate Ocean Storage logo on homepage with proper placement and linking"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
 
 agent_communication:
     - agent: "main"
-      message: "Updated Staff.js component to properly display highlights from staff biographies instead of full descriptions. Fixed duplicate code and ensured all staff members (both directors and assistants) show key qualifications in bullet point format. Ready for testing."
+      message: "All requested tasks are now complete! Updated Staff.js to display highlights, verified Students/News/Sponsors pages are fully implemented with comprehensive content, and confirmed Ocean Storage logo is integrated on homepage. All 5 main tasks ready for testing."
