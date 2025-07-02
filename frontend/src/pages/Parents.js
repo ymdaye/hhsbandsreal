@@ -267,6 +267,304 @@ const Parents = () => {
         </div>
       </section>
 
+      {/* HBPA Contacts */}
+      <section className="py-20 bg-primary-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              HBPA Leadership & Contacts
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Meet our dedicated parent volunteers who make the magic happen
+            </p>
+          </motion.div>
+
+          {/* Officers */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">HBPA Officers</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-xl font-bold text-primary-600 mb-2">Amy Paris</h4>
+                <p className="text-gray-900 font-semibold">President</p>
+                <a href="mailto:president@hickorybands.org" className="text-primary-600 hover:text-primary-700 text-sm">
+                  president@hickorybands.org
+                </a>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-xl font-bold text-primary-600 mb-2">Misty Leslie</h4>
+                <p className="text-gray-900 font-semibold">Vice President</p>
+                <a href="mailto:vicepresident@hickorybands.org" className="text-primary-600 hover:text-primary-700 text-sm">
+                  vicepresident@hickorybands.org
+                </a>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-xl font-bold text-primary-600 mb-2">Jessica Geffers</h4>
+                <p className="text-gray-900 font-semibold">2nd Vice President</p>
+                <a href="mailto:vicepresident2@hickorybands.org" className="text-primary-600 hover:text-primary-700 text-sm">
+                  vicepresident2@hickorybands.org
+                </a>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-xl font-bold text-primary-600 mb-2">Jason Darish</h4>
+                <p className="text-gray-900 font-semibold">Treasurer</p>
+                <a href="mailto:treasurer@hickorybands.org" className="text-primary-600 hover:text-primary-700 text-sm">
+                  treasurer@hickorybands.org
+                </a>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-xl font-bold text-primary-600 mb-2">Jennifer Wilhite</h4>
+                <p className="text-gray-900 font-semibold">Vice Treasurer</p>
+                <a href="mailto:vicetreasurer@hickorybands.org" className="text-primary-600 hover:text-primary-700 text-sm">
+                  vicetreasurer@hickorybands.org
+                </a>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-xl font-bold text-primary-600 mb-2">Shauna Bowen</h4>
+                <p className="text-gray-900 font-semibold">Secretary</p>
+                <a href="mailto:secretary@hickorybands.org" className="text-primary-600 hover:text-primary-700 text-sm">
+                  secretary@hickorybands.org
+                </a>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* Key Committee Chairs */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Committee Chairs</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">SEVMG</h4>
+                <p className="text-primary-600 font-semibold">MariSara Butts</p>
+                <p className="text-primary-600 font-semibold">Ryan Jones</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Craft Fair</h4>
+                <p className="text-primary-600 font-semibold">Melissa Jones</p>
+                <a href="mailto:craftshowhickory@gmail.com" className="text-primary-600 hover:text-primary-700 text-sm block">
+                  craftshowhickory@gmail.com
+                </a>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Corporate Sponsorships</h4>
+                <p className="text-primary-600 font-semibold">Alizabeth Lee</p>
+                <a href="mailto:sponsorships@hickorybands.org" className="text-primary-600 hover:text-primary-700 text-sm block">
+                  sponsorships@hickorybands.org
+                </a>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Chaperones</h4>
+                <p className="text-primary-600 font-semibold">Jessica Getters</p>
+                <p className="text-primary-600 font-semibold">Jennifer Wilhite</p>
+                <a href="mailto:chaperones@hickorybands.org" className="text-primary-600 hover:text-primary-700 text-sm block">
+                  chaperones@hickorybands.org
+                </a>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">RaiseRight Gift Cards</h4>
+                <p className="text-primary-600 font-semibold">Tammy Walters</p>
+                <a href="mailto:hbpascrip@gmail.com" className="text-primary-600 hover:text-primary-700 text-sm block">
+                  hbpascrip@gmail.com
+                </a>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Communications</h4>
+                <p className="text-primary-600 font-semibold">Misty Leslie</p>
+                <a href="mailto:communcations@hickorybands.org" className="text-primary-600 hover:text-primary-700 text-sm block">
+                  communcations@hickorybands.org
+                </a>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* Section Liaisons */}
+          <div>
+            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Section Parent Liaisons</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Flute</h4>
+                <p className="text-primary-600">Kristin Belfield</p>
+                <p className="text-primary-600">Sam Belfield</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Clarinet</h4>
+                <p className="text-primary-600">Jolynn Roush</p>
+                <p className="text-primary-600">Samantha Emmert</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Saxophone</h4>
+                <p className="text-primary-600">Laura Rouse</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Trumpet & Mellophone</h4>
+                <p className="text-primary-600">Diane Schneider</p>
+                <p className="text-primary-600">Amy Paris</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Low Brass</h4>
+                <p className="text-primary-600">Jason Reed</p>
+                <p className="text-primary-600">Alicia Reed</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Battery</h4>
+                <p className="text-primary-600">Michelle Brooks</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Front Ensemble</h4>
+                <p className="text-primary-600">Shauna Bowen</p>
+                <p className="text-primary-600">Marie Dyer</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Color Guard</h4>
+                <p className="text-primary-600">Misty Leslie</p>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-20 bg-primary-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
