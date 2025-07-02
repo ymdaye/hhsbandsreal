@@ -10,6 +10,9 @@ import PerformanceGroups from "./pages/PerformanceGroups";
 import Parents from "./pages/Parents";
 import Payments from "./pages/Payments";
 import History from "./pages/History";
+import Students from "./pages/Students";
+import News from "./pages/News";
+import Sponsors from "./pages/Sponsors";
 
 // Fundraiser pages
 import Fundraisers from "./pages/Fundraisers";
