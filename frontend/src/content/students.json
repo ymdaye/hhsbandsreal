@@ -1,0 +1,32 @@
+{
+  "title": "Student Portal",
+  "campaignInfo": {
+    "totalRaised": "$12,450",
+    "goalAmount": "$20,000",
+    "progressPercentage": 62,
+    "averagePerStudent": "$78",
+    "participatingStudents": 160
+  },
+  "quickLinks": [
+    {
+      "title": "Download Music",
+      "description": "Access current music files and individual parts",
+      "link": "#music"
+    },
+    {
+      "title": "Video Resources", 
+      "description": "Instructional videos and performance recordings",
+      "link": "#videos"
+    },
+    {
+      "title": "Itinerary & Schedule",
+      "description": "Upcoming events, rehearsals, and important dates",
+      "link": "#schedule"
+    },
+    {
+      "title": "Important Documents",
+      "description": "Forms, handbooks, and essential information", 
+      "link": "#documents"
+    }
+  ]
+}
