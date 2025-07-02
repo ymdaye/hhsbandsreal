@@ -260,6 +260,90 @@ const SEVMG = () => {
         </div>
       </section>
 
+      {/* Registered Bands */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Registered Bands 2025
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Join these talented marching bands for an unforgettable day of competition and excellence
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {[
+              "First Colonial HS",
+              "Gates Co. HS", 
+              "Kempsville HS",
+              "Pasquotank HS",
+              "Riverheads HS",
+              "Cox HS",
+              "Kecoughtan HS",
+              "Landstown HS",
+              "Great Bridge HS",
+              "Poquoson HS",
+              "Perquimans County HS",
+              "Princess Anne HS",
+              "Salem HS",
+              "Tabb HS",
+              "Currituck HS",
+              "Gloucester HS",
+              "Ocean Lakes",
+              "Grassfield HS",
+              "Tallwood HS",
+              "Woodside HS",
+              "Hickory HS"
+            ].map((band, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.05 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl shadow-lg p-6 text-center text-white hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="mb-4">
+                  <MusicalNoteIcon className="h-8 w-8 mx-auto opacity-80" />
+                </div>
+                <h3 className="text-lg font-bold mb-2">{band}</h3>
+                <p className="text-primary-100 text-sm">Registered Participant</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="mt-12 text-center"
+          >
+            <div className="bg-primary-50 rounded-2xl p-8 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Registration Still Open!
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Interested in having your band participate? Contact us for registration information.
+              </p>
+              <a
+                href="mailto:sevmg@hickorybands.org"
+                className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-200"
+              >
+                Contact for Registration
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Judging Panel */}
       <section className="py-20 bg-primary-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
