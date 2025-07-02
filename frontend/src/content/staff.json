@@ -3,17 +3,31 @@
   "members": [
     {
       "name": "Mitchell Reed",
-      "role": "Director of Bands",
+      "role": "Band Director",
       "bio": "Mitchell Reed leads the Hickory High School Band Program with passion and dedication, guiding students to excellence in musical performance.",
       "image": "https://images.unsplash.com/photo-1571262625039-adbf7b7dd60f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHxiYW5kJTIwZGlyZWN0b3J8ZW58MHx8fHRlYWx8MTc1MTQ2NDc5NXww&ixlib=rb-4.1.0&q=85",
       "email": "mitchell.reed@cpschools.com"
     },
     {
-      "name": "Assistant Director",
-      "role": "Assistant Band Director",
-      "bio": "Supporting the band program with expertise in musical instruction and student development.",
+      "name": "Yvonne Daye",
+      "role": "Band Director",
+      "bio": "Yvonne Daye brings expertise and dedication to the Hickory High School Band Program, working alongside the team to develop exceptional musical talent.",
       "image": "https://images.pexels.com/photos/9310487/pexels-photo-9310487.jpeg",
-      "email": "contact@hhsbands.org"
+      "email": "yvonne.daye@cpschools.com"
+    },
+    {
+      "name": "Derek Johnson",
+      "role": "Assistant Band Director",
+      "bio": "Derek Johnson supports the band program with expertise in musical instruction and student development, helping to guide students toward musical excellence.",
+      "image": "https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg",
+      "email": "derek.johnson@cpschools.com"
+    },
+    {
+      "name": "Aubrey Horstman",
+      "role": "Assistant Band Director",
+      "bio": "Aubrey Horstman contributes to the success of the Hickory High School Band Program through dedicated instruction and mentorship of student musicians.",
+      "image": "https://images.pexels.com/photos/4709822/pexels-photo-4709822.jpeg",
+      "email": "aubrey.horstman@cpschools.com"
     }
   ]
 }
