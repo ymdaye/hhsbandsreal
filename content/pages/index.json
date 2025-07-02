@@ -1,0 +1,3 @@
+touch content/pages/index.json
+nano content/pages/index.json
+
