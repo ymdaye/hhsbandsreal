@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import Logo from './Logo';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,11 +31,9 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2" onClick={closeMenu}>
-            <div className="w-10 h-10 bg-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">HHS</span>
-            </div>
-            <span className="text-xl font-bold text-gray-900">Hickory Bands</span>
+          <Link to="/" className="flex items-center space-x-3" onClick={closeMenu}>
+            <Logo variant="default" size="medium" />
+            <span className="text-xl font-bold text-gray-900 hidden sm:block">Hickory Bands</span>
           </Link>
 
           {/* Desktop Navigation */}
