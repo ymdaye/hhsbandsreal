@@ -78,36 +78,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ScrollToTop />
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/staff" element={<Staff />} />
-          <Route path="/staff/:staffSlug" element={<StaffMember />} />
-          <Route path="/sevmg" element={<SEVMG />} />
-          <Route path="/groups" element={<PerformanceGroups />} />
-          <Route path="/parents" element={<Parents />} />
-          <Route path="/payments" element={<Payments />} />
-          <Route path="/history" element={<History />} />
-          <Route path="/students" element={<Students />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/sponsors" element={<Sponsors />} />
-          
-          {/* Fundraiser routes */}
-          <Route path="/fundraisers" element={<Fundraisers />} />
-          <Route path="/fundraisers/craft-show" element={<CraftFair />} />
-          <Route path="/fundraisers/golf" element={<GolfTournament />} />
-          <Route path="/hawkward-ask" element={<HAwkwardAsk />} />
-          
-          {/* Ensemble routes */}
-          <Route path="/ensembles/symphonic-band" element={<SymphonicBand />} />
-          <Route path="/ensembles/wind-ensemble" element={<WindEnsemble />} />
-          <Route path="/ensembles/marching-band" element={<MarchingBand />} />
-          <Route path="/ensembles/jazz-band" element={<JazzBand />} />
-          
-          <Route path="/join" element={<div className="pt-16 min-h-screen flex items-center justify-center"><h1 className="text-4xl font-bold text-gray-900">Join the Band - Coming Soon</h1></div>} />
-        </Routes>
-        <Footer />
+        <AppContent />
       </BrowserRouter>
     </div>
   );
