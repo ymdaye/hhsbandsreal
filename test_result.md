@@ -105,6 +105,66 @@
 user_problem_statement: "Update Hickory High School Band website with staff page improvements to display highlights from biographies, implement content for Students/News/Sponsors pages, integrate Ocean Storage logo on homepage, and complete final polish/testing."
 
 frontend:
+  - task: "Join the Band Page"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/JoinBand.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "Implemented comprehensive Join the Band page with 9th grade information, welcome section, how to join steps, marching hawks spotlight, benefits, and contact section."
+        - working: true
+          agent: "testing"
+          comment: "The Join the Band page loads correctly with all required sections: Welcome to Our Band Family, How to Join, Join the Marching Hawks, Why Join Band?, and Ready to Join?. The contact link (directors@hickorybands.org) works properly. All content is displayed correctly with proper formatting and responsive design."
+
+  - task: "Navigation Updates"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/components/Navigation.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "Updated navigation to include 'Upcoming Events' in the About dropdown that links to homepage section."
+        - working: true
+          agent: "testing"
+          comment: "The 'About' dropdown correctly includes 'Upcoming Events' that links to the homepage section (/#upcoming-events). Navigation alignment is fixed for both mobile and desktop views."
+
+  - task: "Section Resource Pages"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/GuardResources.js, /app/frontend/src/pages/PercussionResources.js, /app/frontend/src/pages/WindsResources.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "Implemented Guard Resources, Percussion Resources, and Winds Resources pages with comprehensive content and proper contact information."
+        - working: true
+          agent: "testing"
+          comment: "All section resource pages (Guard Resources, Percussion Resources, and Winds Resources) load correctly with proper content and contact information. The 'Access [Section] Resources' buttons on the Students page correctly link to these pages."
+
+  - task: "Calendar Integration"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/components/Calendar.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "Implemented Google Calendar embed component for display on Students page and other locations."
+        - working: true
+          agent: "testing"
+          comment: "The Google Calendar embed appears correctly on the Students page with proper responsive design. The calendar is properly integrated and displays correctly."
+
   - task: "Update Staff.js to display highlights from biographies instead of full descriptions"
     implemented: true
     working: true
