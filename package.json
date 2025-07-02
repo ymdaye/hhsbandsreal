@@ -25,6 +25,9 @@
     "uuid": "^11.1.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@stackbit/cms-git": "^1.0.35",
+    "@stackbit/dev": "^2.2.35",
+    "@stackbit/types": "^2.1.14"
   }
 }
