@@ -91,6 +91,20 @@ const PerformanceGroups = () => {
       icon: UserGroupIcon,
       image: "https://images.pexels.com/photos/6966502/pexels-photo-6966502.jpeg",
       color: "from-pink-500 to-pink-700"
+    },
+    {
+      title: "Jazz Band",
+      description: "Exploring the art of improvisation and the rich tradition of American jazz music through various styles and ensemble performance.",
+      highlights: [
+        "Improvisation skills development",
+        "Jazz theory and harmony",
+        "Multiple jazz styles",
+        "Small and large ensemble work",
+        "Performance opportunities"
+      ],
+      icon: MusicalNoteIcon,
+      image: "https://images.pexels.com/photos/4709822/pexels-photo-4709822.jpeg",
+      color: "from-yellow-500 to-orange-500"
     }
   ];
 
