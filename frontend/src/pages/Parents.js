@@ -620,6 +620,18 @@ const Parents = () => {
                 <p className="text-yellow-700 font-semibold">OPEN - Volunteer Needed!</p>
                 <p className="text-sm text-yellow-600 mt-2">Help maintain the band website</p>
               </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-yellow-50 border-2 border-yellow-200 rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-yellow-800 mb-2">Nominating Committee</h4>
+                <p className="text-yellow-700 font-semibold">OPEN - Volunteer Needed!</p>
+                <p className="text-sm text-yellow-600 mt-2">Help nominate future HBPA officers</p>
+              </motion.div>
             </div>
 
             <div className="mt-8 text-center">
