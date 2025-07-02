@@ -4,12 +4,36 @@ import { CalendarDaysIcon, MapPinIcon, CurrencyDollarIcon, TrophyIcon, UserGroup
 
 const SEVMG = () => {
   const judges = [
-    { name: "Andres Gonzalez", category: "Music Ensemble" },
-    { name: "Marc Whitlock", category: "Music Effect" },
-    { name: "Alex Kluttz", category: "Percussion" },
-    { name: "Lacie Knight", category: "Color Guard" },
-    { name: "TBA", category: "Visual Effect" },
-    { name: "TBA", category: "Visual Ensemble" }
+    { 
+      name: "Andres Gonzalez", 
+      category: "Music Ensemble",
+      bio: "Andres Gonzalez brings extensive experience in marching band music ensemble judging with a focus on musical excellence and ensemble precision. His expertise helps bands achieve superior musical performance standards."
+    },
+    { 
+      name: "Marc Whitlock", 
+      category: "Music Effect",
+      bio: "Marc Whitlock specializes in evaluating the overall musical impact and effect of marching band performances. His keen ear for musical interpretation and expression guides bands toward more compelling performances."
+    },
+    { 
+      name: "Alex Kluttz", 
+      category: "Percussion",
+      bio: "Alex Kluttz is a respected percussion specialist with years of experience in marching percussion performance and instruction. His expertise in battery and front ensemble helps percussion sections achieve technical excellence."
+    },
+    { 
+      name: "Lacie Knight", 
+      category: "Color Guard",
+      bio: "Lacie Knight brings professional expertise in color guard performance and instruction. Her background in movement, equipment, and visual design helps guard sections refine their artistic expression and technical skills."
+    },
+    { 
+      name: "TBA", 
+      category: "Visual Effect",
+      bio: "Our Visual Effect judge evaluates the overall visual impact and artistic impression of the marching band performance, focusing on how all visual elements work together to create a compelling show."
+    },
+    { 
+      name: "TBA", 
+      category: "Visual Ensemble",
+      bio: "The Visual Ensemble judge focuses on the precision, technique, and overall visual execution of the marching band's drill and movement, ensuring excellence in marching fundamentals."
+    }
   ];
 
   const ticketInfo = [
