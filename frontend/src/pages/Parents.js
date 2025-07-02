@@ -461,6 +461,136 @@ const Parents = () => {
                   communcations@hickorybands.org
                 </a>
               </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Concessions</h4>
+                <p className="text-primary-600 font-semibold">Christy Lucas</p>
+                <p className="text-primary-600 font-semibold">Michelle Tibbit</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
+                viewport={ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Band Banquet</h4>
+                <p className="text-primary-600 font-semibold">Laura Rouse</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Pit Crew</h4>
+                <p className="text-primary-600 font-semibold">Jason Reed</p>
+                <p className="text-primary-600 font-semibold">Jason Butts</p>
+                <p className="text-primary-600 font-semibold">Scott Brooks</p>
+                <p className="text-primary-600 font-semibold">Ryan Jones</p>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* Vacant Positions */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Volunteer Opportunities - Open Positions</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="bg-yellow-50 border-2 border-yellow-200 rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-yellow-800 mb-2">Golf Tournament Chair</h4>
+                <p className="text-yellow-700 font-semibold">OPEN - Volunteer Needed!</p>
+                <p className="text-sm text-yellow-600 mt-2">Help organize our annual golf tournament fundraiser</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-yellow-50 border-2 border-yellow-200 rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-yellow-800 mb-2">Virtual 5K Chair</h4>
+                <p className="text-yellow-700 font-semibold">OPEN - Volunteer Needed!</p>
+                <p className="text-sm text-yellow-600 mt-2">Coordinate our virtual 5K fundraising event</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-yellow-50 border-2 border-yellow-200 rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-yellow-800 mb-2">Spirit Wear Chair</h4>
+                <p className="text-yellow-700 font-semibold">OPEN - Volunteer Needed!</p>
+                <p className="text-sm text-yellow-600 mt-2">Manage spirit wear sales and inventory</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-yellow-50 border-2 border-yellow-200 rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-yellow-800 mb-2">Travel Chair</h4>
+                <p className="text-yellow-700 font-semibold">OPEN - Volunteer Needed!</p>
+                <p className="text-sm text-yellow-600 mt-2">Coordinate band travel arrangements</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-yellow-50 border-2 border-yellow-200 rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-yellow-800 mb-2">Uniform Washing Chair</h4>
+                <p className="text-yellow-700 font-semibold">OPEN - Volunteer Needed!</p>
+                <p className="text-sm text-yellow-600 mt-2">Organize uniform cleaning efforts</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-yellow-50 border-2 border-yellow-200 rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-yellow-800 mb-2">Website Chair</h4>
+                <p className="text-yellow-700 font-semibold">OPEN - Volunteer Needed!</p>
+                <p className="text-sm text-yellow-600 mt-2">Help maintain the band website</p>
+              </motion.div>
+            </div>
+
+            <div className="mt-8 text-center">
+              <div className="bg-primary-50 rounded-2xl p-6 max-w-2xl mx-auto">
+                <h4 className="text-xl font-bold text-gray-900 mb-4">Ready to Volunteer?</h4>
+                <p className="text-gray-600 mb-4">
+                  Interested in taking on one of these leadership roles? Contact the HBPA President for more information.
+                </p>
+                <a
+                  href="mailto:president@hickorybands.org"
+                  className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-200"
+                >
+                  Contact HBPA President
+                </a>
+              </div>
             </div>
           </div>
 
