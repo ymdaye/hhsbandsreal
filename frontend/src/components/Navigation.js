@@ -16,7 +16,10 @@ const Navigation = () => {
     { name: 'Parents', path: '/parents' },
     { name: 'Fundraisers', path: '/fundraisers' },
     { name: 'Payments', path: '/payments' },
-    { name: 'History', path: '/history' }
+    { name: 'History', path: '/history' },
+    { name: 'Students', path: '/students' },
+    { name: 'News', path: '/news' },
+    { name: 'Sponsors', path: '/sponsors' }
   ];
 
   const toggleMenu = () => {
