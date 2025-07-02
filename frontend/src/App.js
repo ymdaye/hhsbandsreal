@@ -15,6 +15,9 @@ import Students from "./pages/Students";
 import News from "./pages/News";
 import Sponsors from "./pages/Sponsors";
 import JoinBand from "./pages/JoinBand";
+import GuardResources from "./pages/GuardResources";
+import PercussionResources from "./pages/PercussionResources";
+import WindsResources from "./pages/WindsResources";
 
 // Fundraiser pages
 import Fundraisers from "./pages/Fundraisers";
