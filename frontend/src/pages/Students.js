@@ -182,46 +182,128 @@ const Students = () => {
         </div>
       </section>
 
-      {/* hAwkward Ask Campaign Update */}
+      {/* hAwkward Ask Campaign Update with Live Tracking */}
       <section className="py-12 bg-gradient-to-br from-primary-500 to-primary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="bg-white/10 backdrop-blur-md rounded-3xl p-8 text-center text-white"
+            className="bg-white/10 backdrop-blur-md rounded-3xl p-8 text-white"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">hAwkward Ask Campaign Update</h2>
-            <p className="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
-              Thanks to the incredible support from our community, families, and friends, our hAwkward Ask campaign is making a real difference!
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">hAwkward Ask Campaign</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {/* Total Amount Raised */}
+            {/* Instructions */}
+            <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6 mb-8">
+              <h3 className="text-xl font-bold text-center mb-4">How It Works</h3>
+              <div className="text-primary-100 space-y-3 text-sm md:text-base">
+                <p>• Ask family, friends, neighbors, and community members to support the Hickory Band Program</p>
+                <p>• Share your personal fundraising link or QR code</p>
+                <p>• Track your progress and compete with other sections</p>
+                <p>• Every donation helps fund instruments, uniforms, travel, and competitions</p>
+              </div>
+            </div>
+
+            {/* Incentives & Deadline */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">{studentsData.campaignInfo.totalRaised}</div>
-                <div className="text-lg text-primary-100 mb-4">Total Amount Raised</div>
-                <div className="w-full bg-white/20 rounded-full h-3">
-                  <div className="bg-gradient-to-r from-yellow-400 to-orange-500 h-3 rounded-full" style={{width: `${studentsData.campaignInfo.progressPercentage}%`}}></div>
+                <div className="flex items-center mb-4">
+                  <TrophyIcon className="h-8 w-8 text-yellow-300 mr-3" />
+                  <h3 className="text-xl font-bold">Section Winner Prize</h3>
                 </div>
-                <div className="text-sm text-primary-100 mt-2">{studentsData.campaignInfo.progressPercentage}% of {studentsData.campaignInfo.goalAmount} goal</div>
+                <p className="text-primary-100 text-sm md:text-base">
+                  Winning section (Woodwinds, Brass, Percussion, Color Guard) receives:
+                </p>
+                <ul className="text-white mt-2 space-y-1 text-sm md:text-base">
+                  <li>• Free Football Game-Night Dinner</li>
+                  <li>• VIP Table at event</li>
+                </ul>
               </div>
               
-              {/* Average Per Student */}
               <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">{studentsData.campaignInfo.averagePerStudent}</div>
-                <div className="text-lg text-primary-100 mb-4">Average Raised Per Student</div>
-                <div className="text-sm text-primary-100">
-                  Based on {studentsData.campaignInfo.participatingStudents} participating students
+                <div className="flex items-center mb-4">
+                  <GiftIcon className="h-8 w-8 text-yellow-300 mr-3" />
+                  <h3 className="text-xl font-bold">Individual Winner</h3>
                 </div>
-                <div className="mt-4 text-primary-100">
-                  <span className="text-2xl font-bold text-yellow-300">🎵</span>
-                  <span className="ml-2">Every dollar helps!</span>
+                <p className="text-primary-100 text-sm md:text-base">
+                  Highest individual fundraiser receives:
+                </p>
+                <ul className="text-white mt-2 space-y-1 text-sm md:text-base">
+                  <li>• $50 Gift Card</li>
+                  <li>• Priority signup for bus trips</li>
+                  <li>• Priority hotel room selection</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Deadline */}
+            <div className="bg-red-500/20 border border-red-300 rounded-2xl p-6 mb-8 text-center">
+              <h3 className="text-2xl font-bold text-yellow-300 mb-2">Campaign Deadline</h3>
+              <p className="text-xl font-bold">Friday, August 8th, 2025</p>
+            </div>
+
+            {/* Live Tracking Embeds */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* Campaign Progress */}
+              <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6">
+                <h3 className="text-xl font-bold text-center mb-4">Campaign Progress</h3>
+                <div 
+                  style={{
+                    position: "relative",
+                    overflow: "hidden",
+                    width: "100%",
+                    paddingTop: "120px"
+                  }}
+                >
+                  <iframe 
+                    title='Donation thermometer powered by Zeffy' 
+                    style={{
+                      position: "absolute", 
+                      border: 0, 
+                      top: 0,
+                      left: 0,
+                      bottom: 0,
+                      right: 0,
+                      width: "100%",
+                      height: "120px"
+                    }} 
+                    src='https://www.zeffy.com/embed/thermometer/marching-hawks-hawkward-ask'  
+                    allowTransparency="true"
+                  />
+                </div>
+              </div>
+
+              {/* Top Contributors */}
+              <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6">
+                <h3 className="text-xl font-bold text-center mb-4">Top Contributors</h3>
+                <div 
+                  style={{
+                    position: "relative",
+                    overflow: "hidden",
+                    width: "100%",
+                    paddingTop: "240px"
+                  }}
+                >
+                  <iframe 
+                    title='Donation leaderboard powered by Zeffy' 
+                    style={{
+                      position: "absolute", 
+                      border: 0, 
+                      top: 0,
+                      left: 0,
+                      bottom: 0,
+                      right: 0,
+                      width: "100%",
+                      height: "100%"
+                    }} 
+                    src='https://www.zeffy.com/embed/leaderboard/marching-hawks-hawkward-ask'  
+                    allowTransparency="true"
+                  />
                 </div>
               </div>
             </div>
             
-            <div className="mt-8">
+            <div className="mt-8 text-center">
               <a
                 href="/hawkward-ask"
                 className="inline-flex items-center px-8 py-4 bg-white text-primary-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
