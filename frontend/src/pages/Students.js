@@ -158,25 +158,40 @@ const Students = () => {
         </div>
       </section>
 
-      {/* Quick Links */}
-      <section className="py-12">
+      {/* Navigation Links */}
+      <section className="py-8 bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {quickLinks.map((link, index) => (
-              <motion.a
-                key={index}
-                href={link.link}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 block"
-              >
-                <link.icon className="h-12 w-12 text-primary-600 mb-4" />
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{link.title}</h3>
-                <p className="text-gray-600 text-sm">{link.description}</p>
-              </motion.a>
-            ))}
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-wrap justify-center gap-4"
+          >
+            <a
+              href="#section-resources"
+              className="inline-flex items-center px-6 py-3 bg-primary-100 text-primary-800 font-semibold rounded-lg hover:bg-primary-200 transition-colors duration-200"
+            >
+              Section Resources
+            </a>
+            <a
+              href="#schedule"
+              className="inline-flex items-center px-6 py-3 bg-primary-100 text-primary-800 font-semibold rounded-lg hover:bg-primary-200 transition-colors duration-200"
+            >
+              Band Calendar
+            </a>
+            <a
+              href="#current-schedule"
+              className="inline-flex items-center px-6 py-3 bg-primary-100 text-primary-800 font-semibold rounded-lg hover:bg-primary-200 transition-colors duration-200"
+            >
+              Current Schedule
+            </a>
+            <a
+              href="/important-documents"
+              className="inline-flex items-center px-6 py-3 bg-primary-100 text-primary-800 font-semibold rounded-lg hover:bg-primary-200 transition-colors duration-200"
+            >
+              Important Documents
+            </a>
+          </motion.div>
         </div>
       </section>
 
