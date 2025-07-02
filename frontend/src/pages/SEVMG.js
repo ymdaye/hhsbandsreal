@@ -292,7 +292,8 @@ const SEVMG = () => {
                   <TrophyIcon className="h-12 w-12 text-primary-500 mx-auto" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{judge.name}</h3>
-                <p className="text-primary-600 font-medium">{judge.category}</p>
+                <p className="text-primary-600 font-medium mb-3">{judge.category}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{judge.bio}</p>
               </motion.div>
             ))}
           </div>
