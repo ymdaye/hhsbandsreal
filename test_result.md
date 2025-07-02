@@ -245,6 +245,54 @@ frontend:
           agent: "testing"
           comment: "Navigation header dropdown groups are working correctly. The 'About' dropdown contains History, Staff, and Performance Groups; 'Parents' dropdown contains Payments and Fundraising; 'Students' dropdown contains Performance Groups and Students Login Page. All dropdowns work in both desktop and mobile views."
 
+  - task: "Page Navigation Scroll Fix"
+    implemented: true
+    working: false
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: false
+          agent: "testing"
+          comment: "The ScrollToTop component in App.js is not working correctly. When navigating between pages, the new page does not load at the top but instead maintains the scroll position from the previous page. This was verified by testing navigation between multiple pages."
+
+  - task: "Home Page Mobile Alignment"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/Home.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "testing"
+          comment: "The 'Join the Band' and 'SEVMG 2025' buttons are properly centered within their containers on mobile view. Tested on mobile viewport size (390x844) and verified the alignment is correct."
+
+  - task: "Staff Page 2x2 Grid on Mobile"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/Staff.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "testing"
+          comment: "The staff cards maintain a proper 2x2 grid layout on mobile with appropriate sizing (width: 171px). The teal/black theme looks good with teal elements (13 found) and black elements (4 found) properly displayed."
+
+  - task: "Students Page Updates"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/Students.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "testing"
+          comment: "Password protection works correctly with 'HawksMusic2025'. The 'Section Resources' link properly jumps to that section. 'Important Documents' correctly links to /parents. The calendar component appears on the students page. The hAwkward Ask campaign section includes all required elements (instructions, incentives, deadline, thermometer and leaderboard)."
+
 metadata:
   created_by: "main_agent"
   version: "1.0"
@@ -253,14 +301,12 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Update Staff.js to display highlights from biographies instead of full descriptions"
-    - "Implement Students page with detailed content including guard/percussion/winds cards, music/video links, itinerary, and password protection"
-    - "Populate News page with latest band news and announcements"
-    - "Implement Sponsors page with sponsor details and Ocean Storage logo integration"
-    - "Integrate Ocean Storage logo on homepage with proper placement and linking"
-    - "Update hAwkward Ask page by removing Where Your Support Goes section"
-    - "Implement Navigation Header Dropdown Groups"
-  stuck_tasks: []
+    - "Page Navigation Scroll Fix"
+    - "Home Page Mobile Alignment"
+    - "Staff Page 2x2 Grid on Mobile"
+    - "Students Page Updates"
+  stuck_tasks:
+    - "Page Navigation Scroll Fix"
   test_all: false
   test_priority: "high_first"
 
