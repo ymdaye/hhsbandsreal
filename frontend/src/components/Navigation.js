@@ -32,8 +32,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3" onClick={closeMenu}>
-            <Logo variant="default" size="medium" />
-            <span className="text-xl font-bold text-gray-900 hidden sm:block">Hickory Bands</span>
+            <Logo variant="navigation" size="medium" showText={false} />
           </Link>
 
           {/* Desktop Navigation */}
