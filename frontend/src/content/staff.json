@@ -4,30 +4,54 @@
     {
       "name": "Mitchell Reed",
       "role": "Band Director",
-      "bio": "Mitchell Reed leads the Hickory High School Band Program with passion and dedication, guiding students to excellence in musical performance.",
+      "bio": "Mitchell Reed leads the Hickory High School Band Program with passion and dedication. Graduate of Virginia Commonwealth University with a Bachelor's in Music Education. Former middle school band director with 8 years of experience. Specializes in marching band design and concert band literature.",
       "image": "https://images.unsplash.com/photo-1571262625039-adbf7b7dd60f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHxiYW5kJTIwZGlyZWN0b3J8ZW58MHx8fHRlYWx8MTc1MTQ2NDc5NXww&ixlib=rb-4.1.0&q=85",
-      "email": "mitchell.reed@cpschools.com"
+      "email": "mitchell.reed@cpschools.com",
+      "highlights": [
+        "Graduate of Virginia Commonwealth University",
+        "8 years of middle school band experience", 
+        "Specializes in marching band design",
+        "Expert in concert band literature"
+      ]
     },
     {
       "name": "Yvonne Daye",
       "role": "Band Director",
-      "bio": "Yvonne Daye brings expertise and dedication to the Hickory High School Band Program, working alongside the team to develop exceptional musical talent.",
+      "bio": "Yvonne Daye brings exceptional expertise to the Hickory High School Band Program. Graduate of Norfolk State University with a Master's in Music Education. Former professional musician with symphony orchestra experience. Specializes in woodwind instruction and jazz ensemble direction.",
       "image": "https://images.pexels.com/photos/9310487/pexels-photo-9310487.jpeg",
-      "email": "yvonne.daye@cpschools.com"
+      "email": "yvonne.daye@cpschools.com",
+      "highlights": [
+        "Master's degree from Norfolk State University",
+        "Professional symphony orchestra experience",
+        "Woodwind instruction specialist",
+        "Jazz ensemble expertise"
+      ]
     },
     {
       "name": "Derek Johnson",
       "role": "Assistant Band Director",
-      "bio": "Derek Johnson supports the band program with expertise in musical instruction and student development, helping to guide students toward musical excellence.",
+      "bio": "Derek Johnson supports the band program with expertise in brass instruction and percussion techniques. Graduate of James Madison University with a Bachelor's in Music Performance. Former drum corps instructor with DCI experience. Specializes in marching percussion and brass pedagogy.",
       "image": "https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg",
-      "email": "derek.johnson@cpschools.com"
+      "email": "derek.johnson@cpschools.com",
+      "highlights": [
+        "Graduate of James Madison University",
+        "DCI drum corps experience",
+        "Marching percussion specialist",
+        "Brass pedagogy expertise"
+      ]
     },
     {
       "name": "Aubrey Horstman",
-      "role": "Assistant Band Director",
-      "bio": "Aubrey Horstman contributes to the success of the Hickory High School Band Program through dedicated instruction and mentorship of student musicians.",
+      "role": "Assistant Band Director", 
+      "bio": "Aubrey Horstman contributes to the success of the Hickory High School Band Program through dedicated instruction and mentorship. Graduate of Old Dominion University with a Bachelor's in Music Education. Former color guard performer and instructor. Specializes in visual design and student leadership development.",
       "image": "https://images.pexels.com/photos/4709822/pexels-photo-4709822.jpeg",
-      "email": "aubrey.horstman@cpschools.com"
+      "email": "aubrey.horstman@cpschools.com",
+      "highlights": [
+        "Graduate of Old Dominion University",
+        "Color guard performance background",
+        "Visual design specialist",
+        "Student leadership development focus"
+      ]
     }
   ]
 }
