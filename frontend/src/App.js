@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Staff from "./pages/Staff";
 import SEVMG from "./pages/SEVMG";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/history" element={<div className="pt-16 min-h-screen flex items-center justify-center"><h1 className="text-4xl font-bold text-gray-900">History - Coming Soon</h1></div>} />
           <Route path="/join" element={<div className="pt-16 min-h-screen flex items-center justify-center"><h1 className="text-4xl font-bold text-gray-900">Join the Band - Coming Soon</h1></div>} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
