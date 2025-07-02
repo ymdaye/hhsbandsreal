@@ -23,29 +23,29 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center lg:justify-items-start">
           {/* Logo and Description */}
-          <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
+          <div className="lg:col-span-2 text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start space-x-3 mb-6">
               <Logo variant="white" size="large" showText={false} />
               <div>
                 <h3 className="text-xl font-bold">Hickory High School</h3>
                 <p className="text-gray-300">Band Program</p>
               </div>
             </div>
-            <p className="text-gray-300 mb-6 max-w-md">
+            <p className="text-gray-300 mb-6 max-w-md mx-auto lg:mx-0">
               Excellence in Musical Education • Superior-Rated Concert Bands • Award-Winning Marching Band
             </p>
             <div className="space-y-2">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center justify-center lg:justify-start space-x-2">
                 <MapPinIcon className="h-5 w-5 text-primary-400" />
                 <span className="text-gray-300">1996 Hawk Blvd, Chesapeake, VA 23322</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center justify-center lg:justify-start space-x-2">
                 <PhoneIcon className="h-5 w-5 text-primary-400" />
                 <span className="text-gray-300">(757) 421-4400</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center justify-center lg:justify-start space-x-2">
                 <EnvelopeIcon className="h-5 w-5 text-primary-400" />
                 <span className="text-gray-300">contact@hhsbands.org</span>
               </div>
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-center lg:text-left">
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
@@ -70,8 +70,8 @@ const Footer = () => {
           </div>
 
           {/* Parents & Students */}
-          <div>
-            <h4 className="text-lg font-semibold mb-6">Parents & Students</h4>
+          <div className="text-center lg:text-left">
+            <h4 className="text-lg font-semibold mb-6">Band Program</h4>
             <ul className="space-y-3">
               {parentLinks.map((link) => (
                 <li key={link.name}>
