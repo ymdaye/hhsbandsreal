@@ -35,6 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/staff" element={<Staff />} />
+          <Route path="/staff/:staffSlug" element={<StaffMember />} />
           <Route path="/sevmg" element={<SEVMG />} />
           <Route path="/groups" element={<PerformanceGroups />} />
           <Route path="/parents" element={<Parents />} />
