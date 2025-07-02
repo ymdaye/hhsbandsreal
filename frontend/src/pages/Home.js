@@ -10,7 +10,7 @@ const Home = () => {
   const heroData = {
     title: "Hickory High School Bands",
     subtitle: "Excellence in Musical Education • Superior-Rated Concert Bands • Award-Winning Marching Band",
-    backgroundImage: "https://images.pexels.com/photos/343683/pexels-photo-343683.jpeg",
+    backgroundImage: "https://hhsbands.org/wp-content/uploads/2024/11/BOA-New-Jersey-2024.jpg",
     ctaText: "Join the Band",
     ctaUrl: "/join"
   };
