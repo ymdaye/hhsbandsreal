@@ -1,0 +1,35 @@
+{
+  "title": "Hickory High School Bands",
+  "slug": "home",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Hickory High School Bands",
+      "subtitle": "Excellence in Musical Education • Superior-Rated Concert Bands • Award-Winning Marching Band",
+      "backgroundImage": "https://images.pexels.com/photos/343683/pexels-photo-343683.jpeg",
+      "ctaText": "Join the Band",
+      "ctaUrl": "/join"
+    },
+    {
+      "type": "features",
+      "title": "Our Program",
+      "features": [
+        {
+          "title": "Marching Band",
+          "description": "Award-winning marching band with superior ratings and championship performances",
+          "icon": "trophy"
+        },
+        {
+          "title": "Concert Bands",
+          "description": "Superior-rated concert bands developing musical excellence",
+          "icon": "music"
+        },
+        {
+          "title": "Wind Ensemble",
+          "description": "Advanced ensemble for our most accomplished musicians",
+          "icon": "wind"
+        }
+      ]
+    }
+  ]
+}
