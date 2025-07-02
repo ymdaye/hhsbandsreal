@@ -189,6 +189,20 @@ const Staff = () => {
                       {member.bio}
                     </p>
                     
+                    {member.highlights && (
+                      <div className="mb-6">
+                        <h4 className="font-semibold text-gray-900 mb-3 text-center">Key Qualifications:</h4>
+                        <ul className="space-y-2">
+                          {member.highlights.map((highlight, i) => (
+                            <li key={i} className="flex items-center text-gray-700 text-sm">
+                              <div className="w-2 h-2 bg-primary-500 rounded-full mr-3 flex-shrink-0"></div>
+                              {highlight}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    
                     {member.email && (
                       <div className="text-center">
                         <a
