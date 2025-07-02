@@ -1,0 +1,26 @@
+[build]
+  command = "cd frontend && yarn build"
+  publish = "frontend/build"
+
+[build.environment]
+  NODE_VERSION = "18"
+  YARN_VERSION = "1.22.22"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+  REACT_APP_BACKEND_URL = "https://hhsbands-api.netlify.app"
+
+[context.deploy-preview.environment]
+  REACT_APP_BACKEND_URL = "https://hhsbands-api.netlify.app"
+
+[context.branch-deploy.environment]
+  REACT_APP_BACKEND_URL = "https://hhsbands-api.netlify.app"
