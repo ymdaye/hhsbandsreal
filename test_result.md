@@ -249,13 +249,16 @@ frontend:
     implemented: true
     working: false
     file: "/app/frontend/src/App.js"
-    stuck_count: 0
+    stuck_count: 1
     priority: "high"
     needs_retesting: false
     status_history:
         - working: false
           agent: "testing"
           comment: "The ScrollToTop component in App.js is not working correctly. When navigating between pages, the new page does not load at the top but instead maintains the scroll position from the previous page. This was verified by testing navigation between multiple pages."
+        - working: false
+          agent: "testing"
+          comment: "Retested the ScrollToTop functionality and confirmed it's still not working. When scrolling to the bottom of the Join the Band page and then navigating to the Staff page, the new page loads at position 1227px instead of at the top. The ScrollToTop component in App.js needs to be fixed."
 
   - task: "Home Page Mobile Alignment"
     implemented: true
