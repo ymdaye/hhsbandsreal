@@ -72,6 +72,9 @@ function AppContent() {
         <Route path="/ensembles/jazz-band" element={<JazzBand />} />
         
         <Route path="/join" element={<JoinBand />} />
+        <Route path="/guard-resources" element={<GuardResources />} />
+        <Route path="/percussion-resources" element={<PercussionResources />} />
+        <Route path="/winds-resources" element={<WindsResources />} />
       </Routes>
       <Footer />
     </>
