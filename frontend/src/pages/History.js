@@ -156,59 +156,6 @@ const History = () => {
         </div>
       </section>
 
-      {/* Program Milestones */}
-      <section className="py-20 bg-primary-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Program Milestones
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Journey through the decades of growth, excellence, and tradition that shaped our program
-            </p>
-          </motion.div>
-
-          <div className="space-y-8">
-            {programMilestones.map((milestone, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-2xl shadow-xl overflow-hidden"
-              >
-                <div className="md:flex">
-                  <div className={`md:w-1/4 p-8 bg-gradient-to-br ${index % 2 === 0 ? 'from-primary-500 to-primary-700' : 'from-blue-500 to-blue-700'} text-white text-center`}>
-                    <h3 className="text-3xl font-bold mb-2">{milestone.decade}</h3>
-                    <h4 className="text-xl font-semibold">{milestone.title}</h4>
-                  </div>
-                  <div className="md:w-3/4 p-8">
-                    <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-                      {milestone.description}
-                    </p>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                      {milestone.highlights.map((highlight, i) => (
-                        <div key={i} className="flex items-center">
-                          <div className="w-2 h-2 bg-primary-500 rounded-full mr-2"></div>
-                          <span className="text-gray-700 text-sm">{highlight}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Marching Show Timeline */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
