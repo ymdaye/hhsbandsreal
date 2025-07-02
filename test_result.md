@@ -307,7 +307,7 @@ frontend:
 
   - task: "Page Navigation Scroll Fix"
     implemented: true
-    working: false
+    working: true
     file: "/app/frontend/src/App.js"
     stuck_count: 2
     priority: "high"
@@ -322,6 +322,9 @@ frontend:
         - working: false
           agent: "testing"
           comment: "Conducted comprehensive testing of the scroll fix implementation. The ScrollToTop component in App.js is still not working correctly. When navigating from Join the Band page (after scrolling down) to Staff page, the scroll position is maintained at around 1600px instead of resetting to 0. Multiple navigation tests between pages (Home → Join → Staff → News → SEVMG) showed inconsistent scroll behavior, with most pages not loading at the top. Browser back/forward navigation also showed issues: when going back to Home from Join, the scroll position was at 300px, and when going back to Staff from News, it was at 0px (inconsistent behavior). The issue persists on both desktop and mobile viewports."
+        - working: true
+          agent: "testing"
+          comment: "Conducted comprehensive testing of the updated useScrollToTop hook implementation. The scroll position is now correctly reset to 0 when navigating between pages. All test scenarios passed: 1) Primary Scroll Test - navigating from Join the Band page to Staff page after scrolling down, 2) Multiple Page Navigation Test - navigating through Students → News → SEVMG with scrolling between each navigation, 3) Specific Problematic Navigation - navigating from Join the Band (scrolled to bottom) to Staff page, 4) Browser Back/Forward Test - using browser history navigation, and 5) Mobile Testing - verifying scroll behavior on mobile viewport. The multiple timeout approach with three different scroll reset methods is working effectively without causing any performance issues."
 
   - task: "Home Page Mobile Alignment"
     implemented: true
