@@ -216,20 +216,6 @@ const History = () => {
               artistic innovation, and community pride. Our legacy continues to grow with each 
               performance, each student, and each year of dedication to the art of music.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6">
-                <div className="text-3xl font-bold text-white mb-2">28+</div>
-                <div className="text-primary-200">Years of Excellence</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6">
-                <div className="text-3xl font-bold text-white mb-2">28</div>
-                <div className="text-primary-200">Marching Show Themes</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6">
-                <div className="text-3xl font-bold text-white mb-2">100s</div>
-                <div className="text-primary-200">Students Impacted</div>
-              </div>
-            </div>
           </motion.div>
         </div>
       </section>
