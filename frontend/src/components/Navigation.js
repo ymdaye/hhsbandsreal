@@ -14,6 +14,7 @@ const Navigation = () => {
     { name: 'SEVMG', path: '/sevmg' },
     { name: 'Performance Groups', path: '/groups' },
     { name: 'Parents', path: '/parents' },
+    { name: 'Fundraisers', path: '/fundraisers' },
     { name: 'Payments', path: '/payments' },
     { name: 'History', path: '/history' }
   ];
