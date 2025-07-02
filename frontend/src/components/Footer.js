@@ -41,14 +41,6 @@ const Footer = () => {
                 <MapPinIcon className="h-5 w-5 text-primary-400" />
                 <span className="text-gray-300">1996 Hawk Blvd, Chesapeake, VA 23322</span>
               </div>
-              <div className="flex items-center justify-center lg:justify-start space-x-2">
-                <PhoneIcon className="h-5 w-5 text-primary-400" />
-                <span className="text-gray-300">(757) 421-4400</span>
-              </div>
-              <div className="flex items-center justify-center lg:justify-start space-x-2">
-                <EnvelopeIcon className="h-5 w-5 text-primary-400" />
-                <span className="text-gray-300">contact@hhsbands.org</span>
-              </div>
             </div>
           </div>
 
