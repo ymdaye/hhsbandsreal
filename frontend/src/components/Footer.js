@@ -28,7 +28,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <Logo variant="light" size="large" />
+              <Logo variant="white" size="large" showText={false} />
               <div>
                 <h3 className="text-xl font-bold">Hickory High School</h3>
                 <p className="text-gray-300">Band Program</p>
