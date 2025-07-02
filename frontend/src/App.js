@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Staff from "./pages/Staff";
+import StaffMember from "./pages/StaffMember";
 import SEVMG from "./pages/SEVMG";
 import PerformanceGroups from "./pages/PerformanceGroups";
 import Parents from "./pages/Parents";
