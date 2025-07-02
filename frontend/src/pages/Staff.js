@@ -123,6 +123,20 @@ const Staff = () => {
                     {staffData.members[1].bio}
                   </p>
                   
+                  {staffData.members[1].highlights && (
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-gray-900 mb-3 text-center">Key Qualifications:</h4>
+                      <ul className="space-y-2">
+                        {staffData.members[1].highlights.map((highlight, i) => (
+                          <li key={i} className="flex items-center text-gray-700 text-sm">
+                            <div className="w-2 h-2 bg-primary-500 rounded-full mr-3 flex-shrink-0"></div>
+                            {highlight}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  
                   {staffData.members[1].email && (
                     <div className="text-center">
                       <a
