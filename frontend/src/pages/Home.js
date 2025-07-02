@@ -77,7 +77,7 @@ const Home = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Our Program Excellence
+              Empowering Students Through Music
             </h2>
             <p className="text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed">
               Located in Chesapeake, Virginia, The Hickory High School Band is a multi-faceted program that includes not only superior-rated Concert Bands and Wind Ensemble, but also an award-winning Marching Band. The Hickory Marching Hawks perform at all home football games, and enter multiple competitions each year. The Concert Bands put on several concerts and perform at Band Assessment each year. The Hickory Winter Guard and Indoor Percussion programs thrive during the winter and spring months as they perform at competitions throughout Virginia.
