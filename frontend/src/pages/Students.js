@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { LockClosedIcon, MusicalNoteIcon, UserGroupIcon, DocumentTextIcon, VideoCameraIcon, CalendarDaysIcon, CloudArrowDownIcon } from '@heroicons/react/24/outline';
+import { LockClosedIcon, MusicalNoteIcon, UserGroupIcon, DocumentTextIcon, VideoCameraIcon, CalendarDaysIcon, CloudArrowDownIcon, TrophyIcon, GiftIcon } from '@heroicons/react/24/outline';
+import Calendar from '../components/Calendar';
 import studentsData from '../content/students.json';
 
 const Students = () => {
