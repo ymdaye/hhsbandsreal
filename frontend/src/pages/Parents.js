@@ -478,7 +478,7 @@ const Parents = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.7 }}
-                viewport={ once: true }}
+                viewport={{ once: true }}
                 className="bg-white rounded-2xl shadow-lg p-6"
               >
                 <h4 className="text-lg font-bold text-gray-900 mb-2">Band Banquet</h4>
