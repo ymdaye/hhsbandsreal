@@ -59,10 +59,32 @@ const Students = () => {
     }
   ];
 
-  const quickLinks = studentsData.quickLinks.map((link, index) => ({
-    ...link,
-    icon: [CloudArrowDownIcon, VideoCameraIcon, CalendarDaysIcon, DocumentTextIcon][index]
-  }));
+  const quickLinks = [
+    {
+      title: "Section Resources",
+      description: "Access section-specific materials and resources",
+      icon: MusicalNoteIcon,
+      link: "#section-resources"
+    },
+    {
+      title: "Video Resources",
+      description: "Instructional videos and performance recordings",
+      icon: VideoCameraIcon,
+      link: "#videos"
+    },
+    {
+      title: "Itinerary & Schedule",
+      description: "Upcoming events, rehearsals, and important dates",
+      icon: CalendarDaysIcon,
+      link: "#schedule"
+    },
+    {
+      title: "Important Documents",
+      description: "Forms, handbooks, and essential information",
+      icon: DocumentTextIcon,
+      link: "/parents"
+    }
+  ];
 
   if (!isAuthenticated) {
     return (
