@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 const Hero = ({ title, subtitle, backgroundImage, ctaText, ctaUrl }) => {
   return (
@@ -17,6 +18,16 @@ const Hero = ({ title, subtitle, backgroundImage, ctaText, ctaUrl }) => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        {/* Logo */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="mb-8"
+        >
+          <Logo variant="white" size="hero" showText={false} className="justify-center" />
+        </motion.div>
+
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
