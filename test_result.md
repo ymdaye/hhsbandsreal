@@ -143,7 +143,7 @@ frontend:
 
   - task: "Populate News page with latest band news and announcements"
     implemented: true
-    working: false  
+    working: true  
     file: "/app/frontend/src/pages/News.js"
     stuck_count: 0
     priority: "medium"
@@ -155,6 +155,9 @@ frontend:
         - working: false
           agent: "testing"
           comment: "News page is not displaying properly. The page is showing the homepage content instead of the news content."
+        - working: true
+          agent: "testing"
+          comment: "After React Router DOM downgrade from 7.5.1 to 6.28.0, the News page is now working correctly. The page displays the latest news articles including the BOA championship news, SEVMG 2025 announcement, and other band-related news with proper formatting."
 
   - task: "Implement Sponsors page with sponsor details and Ocean Storage logo integration"
     implemented: true
