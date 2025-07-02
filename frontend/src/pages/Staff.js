@@ -152,7 +152,7 @@ const Staff = () => {
                 <div>
                   <h3 className="font-semibold mb-2">General Contact</h3>
                   <p className="text-primary-100">
-                    Email: contact@hhsbands.org<br />
+                    Contact the Band Directors at directors@hickorybands.org<br />
                     Phone: (757) 421-4400
                   </p>
                 </div>
