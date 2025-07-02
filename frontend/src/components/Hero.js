@@ -50,12 +50,12 @@ const Hero = ({ title, subtitle, backgroundImage, ctaText, ctaUrl }) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           {ctaText && ctaUrl && (
             <Link
               to={ctaUrl}
-              className="inline-flex items-center px-8 py-4 bg-primary-500 text-white font-semibold text-lg rounded-lg hover:bg-primary-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-glow"
+              className="inline-flex items-center justify-center px-8 py-4 bg-primary-500 text-white font-semibold text-lg rounded-lg hover:bg-primary-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-glow text-center w-full sm:w-auto"
             >
               {ctaText}
             </Link>
@@ -63,7 +63,7 @@ const Hero = ({ title, subtitle, backgroundImage, ctaText, ctaUrl }) => {
           
           <Link
             to="/sevmg"
-            className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold text-lg rounded-lg hover:bg-white hover:text-primary-900 transition-all duration-200"
+            className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold text-lg rounded-lg hover:bg-white hover:text-primary-900 transition-all duration-200 text-center w-full sm:w-auto"
           >
             SEVMG 2025
           </Link>
