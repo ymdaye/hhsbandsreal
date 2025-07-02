@@ -122,6 +122,9 @@ frontend:
         - working: true
           agent: "testing"
           comment: "After restarting the frontend service and testing again, the Staff page is now displaying correctly with key qualifications highlights for both directors and assistant directors."
+        - working: true
+          agent: "testing"
+          comment: "Verified that Derick Johnson is correctly listed as 'Percussion Director' (not Assistant Band Director) and his logo is properly displayed. All staff highlights are displaying correctly with the updated information."
 
   - task: "Implement Students page with detailed content including guard/percussion/winds cards, music/video links, itinerary, and password protection"
     implemented: true
