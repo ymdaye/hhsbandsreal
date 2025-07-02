@@ -180,6 +180,57 @@ const Students = () => {
         </div>
       </section>
 
+      {/* hAwkward Ask Campaign Update */}
+      <section className="py-12 bg-gradient-to-br from-primary-500 to-primary-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="bg-white/10 backdrop-blur-md rounded-3xl p-8 text-center text-white"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">hAwkward Ask Campaign Update</h2>
+            <p className="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
+              Thanks to the incredible support from our community, families, and friends, our hAwkward Ask campaign is making a real difference!
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {/* Total Amount Raised */}
+              <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6">
+                <div className="text-4xl md:text-5xl font-bold text-white mb-2">$12,450</div>
+                <div className="text-lg text-primary-100 mb-4">Total Amount Raised</div>
+                <div className="w-full bg-white/20 rounded-full h-3">
+                  <div className="bg-gradient-to-r from-yellow-400 to-orange-500 h-3 rounded-full" style={{width: '62%'}}></div>
+                </div>
+                <div className="text-sm text-primary-100 mt-2">62% of $20,000 goal</div>
+              </div>
+              
+              {/* Average Per Student */}
+              <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6">
+                <div className="text-4xl md:text-5xl font-bold text-white mb-2">$78</div>
+                <div className="text-lg text-primary-100 mb-4">Average Raised Per Student</div>
+                <div className="text-sm text-primary-100">
+                  Based on 160 participating students
+                </div>
+                <div className="mt-4 text-primary-100">
+                  <span className="text-2xl font-bold text-yellow-300">🎵</span>
+                  <span className="ml-2">Every dollar helps!</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-8">
+              <a
+                href="/hawkward-ask"
+                className="inline-flex items-center px-8 py-4 bg-white text-primary-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
+              >
+                Learn More About Our Campaign
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Section Resources */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
