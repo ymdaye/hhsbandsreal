@@ -505,6 +505,50 @@ const Parents = () => {
           <div className="mb-16">
             <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Volunteer Opportunities - Open Positions</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Concessions</h4>
+                <p className="text-primary-600 font-semibold">Christy Lucas</p>
+                <p className="text-primary-600 font-semibold">Michelle Tibbit</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Band Banquet</h4>
+                <p className="text-primary-600 font-semibold">Laura Rouse</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg p-6"
+              >
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Pit Crew</h4>
+                <p className="text-primary-600 font-semibold">Jason Reed</p>
+                <p className="text-primary-600 font-semibold">Jason Butts</p>
+                <p className="text-primary-600 font-semibold">Scott Brooks</p>
+                <p className="text-primary-600 font-semibold">Ryan Jones</p>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* Vacant Positions */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Volunteer Opportunities - Open Positions</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
