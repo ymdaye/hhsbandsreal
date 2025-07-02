@@ -161,7 +161,7 @@ frontend:
 
   - task: "Implement Sponsors page with sponsor details and Ocean Storage logo integration"
     implemented: true
-    working: false
+    working: true
     file: "/app/frontend/src/pages/Sponsors.js"
     stuck_count: 0
     priority: "medium"
@@ -173,6 +173,9 @@ frontend:
         - working: false
           agent: "testing"
           comment: "Sponsors page is not displaying properly. The page is showing the homepage content instead of the sponsors content."
+        - working: true
+          agent: "testing"
+          comment: "After React Router DOM downgrade from 7.5.1 to 6.28.0, the Sponsors page is now working correctly. The page displays Ocean Storage as a Platinum Sponsor with proper logo, and includes all sponsorship levels with their benefits."
 
   - task: "Integrate Ocean Storage logo on homepage with proper placement and linking"
     implemented: true
