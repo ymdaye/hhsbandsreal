@@ -25,6 +25,8 @@ const History = () => {
   ];
 
   const marchingShows = [
+    { year: 2025, theme: "Passport to Adventure" },
+    { year: 2024, theme: "The Type Writer" },
     { year: 2023, theme: "SPINphony" },
     { year: 2022, theme: "On a Wall" },
     { year: 2021, theme: "Dreamscapes" },
