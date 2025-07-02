@@ -31,7 +31,7 @@ import JazzBand from "./pages/ensembles/JazzBand";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
