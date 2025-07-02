@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { EnvelopeIcon } from '@heroicons/react/24/outline';
+import { EnvelopeIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
+import { Link } from 'react-router-dom';
 import staffData from '../content/staff.json';
 
 const Staff = () => {
@@ -32,201 +33,90 @@ const Staff = () => {
       {/* Staff Grid */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Band Directors - Side by Side */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300"
-            >
-              <div className="md:flex md:flex-col">
-                {/* Image */}
-                <div className="w-full">
-                  <div className="h-64 overflow-hidden">
-                    <img
-                      src={staffData.members[0].image}
-                      alt={staffData.members[0].name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
-                
-                {/* Content */}
-                <div className="p-8">
-                  <div className="text-center mb-4">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{staffData.members[0].name}</h3>
-                    <span className="inline-block px-4 py-2 bg-primary-100 text-primary-800 text-sm font-semibold rounded-full">
-                      {staffData.members[0].role}
-                    </span>
-                  </div>
-                  
-                  {staffData.members[0].highlights && (
-                    <div className="mb-6">
-                      <h4 className="font-semibold text-gray-900 mb-3 text-center">Key Qualifications:</h4>
-                      <ul className="space-y-2">
-                        {staffData.members[0].highlights.map((highlight, i) => (
-                          <li key={i} className="flex items-center text-gray-700 text-sm">
-                            <div className="w-2 h-2 bg-primary-500 rounded-full mr-3 flex-shrink-0"></div>
-                            {highlight}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                  
-                  {staffData.members[0].email && (
-                    <div className="text-center">
-                      <a
-                        href={`mailto:${staffData.members[0].email}`}
-                        className="inline-flex items-center space-x-2 text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200"
-                      >
-                        <EnvelopeIcon className="h-5 w-5" />
-                        <span>{staffData.members[0].email}</span>
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300"
-            >
-              <div className="md:flex md:flex-col">
-                {/* Image */}
-                <div className="w-full">
-                  <div className="h-64 overflow-hidden">
-                    <img
-                      src={staffData.members[1].image}
-                      alt={staffData.members[1].name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
-                
-                {/* Content */}
-                <div className="p-8">
-                  <div className="text-center mb-4">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{staffData.members[1].name}</h3>
-                    <span className="inline-block px-4 py-2 bg-primary-100 text-primary-800 text-sm font-semibold rounded-full">
-                      {staffData.members[1].role}
-                    </span>
-                  </div>
-                  
-                  <p className="text-gray-600 leading-relaxed mb-6 text-center">
-                    {staffData.members[1].bio}
-                  </p>
-                  
-                  {staffData.members[1].highlights && (
-                    <div className="mb-6">
-                      <h4 className="font-semibold text-gray-900 mb-3 text-center">Key Qualifications:</h4>
-                      <ul className="space-y-2">
-                        {staffData.members[1].highlights.map((highlight, i) => (
-                          <li key={i} className="flex items-center text-gray-700 text-sm">
-                            <div className="w-2 h-2 bg-primary-500 rounded-full mr-3 flex-shrink-0"></div>
-                            {highlight}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                  
-                  {staffData.members[1].email && (
-                    <div className="text-center">
-                      <a
-                        href={`mailto:${staffData.members[1].email}`}
-                        className="inline-flex items-center space-x-2 text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200"
-                      >
-                        <EnvelopeIcon className="h-5 w-5" />
-                        <span>{staffData.members[1].email}</span>
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Assistant Directors */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-            {staffData.members.slice(2).map((member, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+            {staffData.members.map((member, index) => (
               <motion.div
-                key={index + 2}
+                key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300"
+                className="bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300"
               >
-                <div className="md:flex md:flex-col">
+                <div className="relative">
                   {/* Image */}
-                  <div className="w-full">
-                    <div className="h-64 overflow-hidden">
-                      <img
-                        src={member.image}
-                        alt={member.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                      />
-                    </div>
+                  <div className="h-64 overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   </div>
                   
-                  {/* Content */}
-                  <div className="p-8">
-                    <div className="text-center mb-4">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                      <span className="inline-block px-4 py-2 bg-primary-100 text-primary-800 text-sm font-semibold rounded-full">
-                        {member.role}
-                      </span>
+                  {/* Teal accent bar */}
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-400 to-primary-600"></div>
+                </div>
+                
+                {/* Content */}
+                <div className="p-6 text-white">
+                  <div className="text-center mb-4">
+                    <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
+                    <span className="inline-block px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-600 text-white text-sm font-semibold rounded-full">
+                      {member.role}
+                    </span>
+                  </div>
+                  
+                  {member.highlights && (
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-primary-300 mb-3 text-center">Key Qualifications:</h4>
+                      <ul className="space-y-2">
+                        {member.highlights.slice(0, 3).map((highlight, i) => (
+                          <li key={i} className="flex items-center text-gray-300 text-sm">
+                            <div className="w-2 h-2 bg-primary-400 rounded-full mr-3 flex-shrink-0"></div>
+                            {highlight}
+                          </li>
+                        ))}
+                        {member.highlights.length > 3 && (
+                          <li className="flex items-center text-primary-300 text-sm font-medium">
+                            <div className="w-2 h-2 bg-primary-400 rounded-full mr-3 flex-shrink-0"></div>
+                            And more...
+                          </li>
+                        )}
+                      </ul>
                     </div>
-                    
-                    <p className="text-gray-600 leading-relaxed mb-6 text-center">
-                      {member.bio}
-                    </p>
-                    
-                    {member.highlights && (
-                      <div className="mb-6">
-                        <h4 className="font-semibold text-gray-900 mb-3 text-center">Key Qualifications:</h4>
-                        <ul className="space-y-2">
-                          {member.highlights.map((highlight, i) => (
-                            <li key={i} className="flex items-center text-gray-700 text-sm">
-                              <div className="w-2 h-2 bg-primary-500 rounded-full mr-3 flex-shrink-0"></div>
-                              {highlight}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                    
-                    {member.logo && (
-                      <div className="text-center mb-6">
-                        <img
-                          src={member.logo}
-                          alt="Professional Logo"
-                          className="h-16 w-auto mx-auto"
-                          onError={(e) => {
-                            e.target.style.display = 'none';
-                          }}
-                        />
-                      </div>
-                    )}
-                    
+                  )}
+                  
+                  {member.logo && (
+                    <div className="text-center mb-6">
+                      <img
+                        src={member.logo}
+                        alt="Professional Logo"
+                        className="h-12 w-auto mx-auto opacity-80"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                        }}
+                      />
+                    </div>
+                  )}
+                  
+                  <div className="flex flex-col sm:flex-row gap-3">
                     {member.email && (
-                      <div className="text-center">
-                        <a
-                          href={`mailto:${member.email}`}
-                          className="inline-flex items-center space-x-2 text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200"
-                        >
-                          <EnvelopeIcon className="h-5 w-5" />
-                          <span>{member.email}</span>
-                        </a>
-                      </div>
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="flex-1 inline-flex items-center justify-center space-x-2 px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-colors duration-200"
+                      >
+                        <EnvelopeIcon className="h-4 w-4" />
+                        <span>Email</span>
+                      </a>
                     )}
+                    <Link
+                      to={`/staff/${member.name.toLowerCase().replace(/\s+/g, '-')}`}
+                      className="flex-1 inline-flex items-center justify-center space-x-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white font-medium rounded-lg transition-colors duration-200"
+                    >
+                      <span>Full Bio</span>
+                      <ArrowRightIcon className="h-4 w-4" />
+                    </Link>
                   </div>
                 </div>
               </motion.div>
