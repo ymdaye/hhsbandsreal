@@ -3,7 +3,7 @@
   publish = "frontend/build"
 
 [build.environment]
-  NODE_VERSION = "18.18.2"
+  NODE_VERSION = "18"
   YARN_VERSION = "1.22.22"
 
 [[redirects]]
