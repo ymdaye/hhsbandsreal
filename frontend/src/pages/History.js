@@ -56,33 +56,6 @@ const History = () => {
     { year: 1996, theme: "On Broadway" }
   ];
 
-  const programMilestones = [
-    {
-      decade: "2020s",
-      title: "Championship Excellence",
-      description: "Achieving top-tier competition results including BOA Championships and maintaining superior ratings across all ensembles.",
-      highlights: ["BOA Championship Success", "Superior Concert Band Ratings", "Advanced Wind Ensemble", "SEVMG Host Excellence"]
-    },
-    {
-      decade: "2010s", 
-      title: "Program Expansion",
-      description: "Significant growth in program offerings and student participation, establishing multiple award-winning ensembles.",
-      highlights: ["Multi-Ensemble Program", "Increased Participation", "Advanced Repertoire", "Competition Success"]
-    },
-    {
-      decade: "2000s",
-      title: "Foundation Building",
-      description: "Establishing the core traditions and excellence standards that continue to define the Hickory Band Program today.",
-      highlights: ["Program Establishment", "Tradition Building", "Community Support", "Musical Excellence"]
-    },
-    {
-      decade: "1990s",
-      title: "The Beginning",
-      description: "The founding years of the Hickory High School Band Program, starting with 'On Broadway' in 1996.",
-      highlights: ["Program Launch", "First Performances", "Community Building", "Initial Success"]
-    }
-  ];
-
   const getAchievementIcon = (type) => {
     switch (type) {
       case 'Championship':
