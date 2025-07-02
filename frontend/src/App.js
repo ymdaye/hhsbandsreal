@@ -14,6 +14,7 @@ import History from "./pages/History";
 import Students from "./pages/Students";
 import News from "./pages/News";
 import Sponsors from "./pages/Sponsors";
+import TestPage from "./pages/TestPage";
 
 // Fundraiser pages
 import Fundraisers from "./pages/Fundraisers";
