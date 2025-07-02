@@ -63,7 +63,7 @@ function App() {
           <Route path="/join" element={<div className="pt-16 min-h-screen flex items-center justify-center"><h1 className="text-4xl font-bold text-gray-900">Join the Band - Coming Soon</h1></div>} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
