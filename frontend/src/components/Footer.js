@@ -13,9 +13,9 @@ const Footer = () => {
   ];
 
   const parentLinks = [
-    { name: 'HBPA', path: '/parents' },
+    { name: 'Staff', path: '/staff' },
     { name: 'Payments', path: '/payments' },
-    { name: 'History', path: '/history' },
+    { name: 'Performance Groups', path: '/groups' },
     { name: 'Join the Band', path: '/join' }
   ];
 
