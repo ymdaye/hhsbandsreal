@@ -39,6 +39,9 @@ function App() {
           <Route path="/parents" element={<Parents />} />
           <Route path="/payments" element={<Payments />} />
           <Route path="/history" element={<History />} />
+          <Route path="/students" element={<Students />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/sponsors" element={<Sponsors />} />
           
           {/* Fundraiser routes */}
           <Route path="/fundraisers" element={<Fundraisers />} />
