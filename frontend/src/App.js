@@ -35,10 +35,26 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Use setTimeout to ensure DOM is fully rendered
-    setTimeout(() => {
+    // Disable automatic scroll restoration
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+
+    // Multiple approaches to ensure scroll to top
+    const scrollToTop = () => {
       window.scrollTo(0, 0);
-    }, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    };
+
+    // Immediate scroll
+    scrollToTop();
+
+    // Backup scroll after a brief delay
+    const timeoutId = setTimeout(scrollToTop, 10);
+
+    // Cleanup
+    return () => clearTimeout(timeoutId);
   }, [pathname]);
 
   return null;
