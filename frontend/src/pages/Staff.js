@@ -203,6 +203,19 @@ const Staff = () => {
                       </div>
                     )}
                     
+                    {member.logo && (
+                      <div className="text-center mb-6">
+                        <img
+                          src={member.logo}
+                          alt="Professional Logo"
+                          className="h-16 w-auto mx-auto"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                          }}
+                        />
+                      </div>
+                    )}
+                    
                     {member.email && (
                       <div className="text-center">
                         <a
