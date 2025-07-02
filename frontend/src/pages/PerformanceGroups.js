@@ -305,6 +305,7 @@ const PerformanceGroups = () => {
                           group.title.includes('Marching Band') ? '/ensembles/marching-band' :
                           group.title.includes('Indoor Percussion') ? '/ensembles/percussion-ensemble' :
                           group.title.includes('Winter Guard') ? '/ensembles/guard' :
+                          group.title.includes('Jazz Band') ? '/ensembles/jazz-band' :
                           '#'
                         }
                         className="inline-flex items-center px-6 py-3 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors duration-200"
