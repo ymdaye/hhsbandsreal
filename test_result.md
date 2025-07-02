@@ -371,8 +371,7 @@ metadata:
 test_plan:
   current_focus:
     - "Page Navigation Scroll Fix"
-  stuck_tasks:
-    - "Page Navigation Scroll Fix"
+  stuck_tasks: []
   test_all: false
   test_priority: "high_first"
 
