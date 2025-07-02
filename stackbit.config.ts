@@ -188,6 +188,64 @@ export default defineStackbitConfig({
           }
         }
       ]
+    },
+    {
+      name: 'students',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          type: 'string',
+          required: true
+        },
+        {
+          name: 'campaignInfo',
+          type: 'object',
+          fields: [
+            {
+              name: 'totalRaised',
+              type: 'string'
+            },
+            {
+              name: 'goalAmount', 
+              type: 'string'
+            },
+            {
+              name: 'progressPercentage',
+              type: 'number'
+            },
+            {
+              name: 'averagePerStudent',
+              type: 'string'
+            },
+            {
+              name: 'participatingStudents',
+              type: 'number'
+            }
+          ]
+        },
+        {
+          name: 'quickLinks',
+          type: 'list',
+          items: {
+            type: 'object',
+            fields: [
+              {
+                name: 'title',
+                type: 'string'
+              },
+              {
+                name: 'description',
+                type: 'text'
+              },
+              {
+                name: 'link',
+                type: 'string'
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 });
