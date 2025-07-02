@@ -18,6 +18,7 @@ import JoinBand from "./pages/JoinBand";
 import GuardResources from "./pages/GuardResources";
 import PercussionResources from "./pages/PercussionResources";
 import WindsResources from "./pages/WindsResources";
+import useScrollToTop from "./hooks/useScrollToTop";
 
 // Fundraiser pages
 import Fundraisers from "./pages/Fundraisers";
