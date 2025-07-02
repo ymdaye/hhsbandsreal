@@ -1,43 +1,34 @@
 // Logo Configuration for Hickory High School Band
-// Update these URLs with the official logos from Google Drive
+// Official logos from Google Drive
 
 export const LOGO_CONFIG = {
-  // For light backgrounds (navigation, light sections)
-  dark: {
+  // Short HB logo for compact spaces (mobile nav, small areas)
+  short: {
     url: "https://drive.google.com/uc?export=view&id=1y_NWLdD2aYq8Len7p7xXuh_x8FDAnHRT",
-    alt: "Hickory High School Bands Logo - Dark"
+    alt: "HB Logo - Hickory High School Bands"
   },
   
-  // For dark backgrounds (footer, dark sections)
+  // Full Hickory Bands logo for main usage (desktop nav, headers)
+  full: {
+    url: "https://drive.google.com/uc?export=view&id=1Giwva5HyIiQMWQvEGwBdwnZvKg7etvPN",
+    alt: "Hickory Bands Logo - Full"
+  },
+  
+  // White logo for dark/teal backgrounds (footer, hero overlays)
+  white: {
+    url: "https://drive.google.com/uc?export=view&id=1AcmgT_K6xrSnKwO5hAarbp18AG-Gf2SB",
+    alt: "Hickory Bands Logo - White"
+  },
+  
+  // Light background version
   light: {
-    url: "", // UPDATE: Add white/light version logo ID here
-    alt: "Hickory High School Bands Logo - Light"
-  },
-  
-  // For teal backgrounds (hero overlays, teal sections)
-  onTeal: {
-    url: "", // UPDATE: Add logo that works on teal background
-    alt: "Hickory High School Bands Logo - On Teal"
-  },
-  
-  // High resolution version for hero sections
-  hero: {
-    url: "", // UPDATE: Add high-res version if available
-    alt: "Hickory High School Bands Logo - Hero"
+    url: "https://drive.google.com/uc?export=view&id=1_RomENATtXq0Ni-jtb0NpLjP1dziccXj",
+    alt: "HB Logo - Light Background"
   }
 };
 
-// Instructions for updating logos:
-// 1. Go to Google Drive folder: https://drive.google.com/drive/folders/1GJxW69I_2EfjE5_6RVVXVVGdR4K3KQPy
-// 2. For each logo file, right-click → Get link → Copy link
-// 3. Change the link format from:
-//    https://drive.google.com/file/d/FILE_ID/view?usp=sharing
-//    to:
-//    https://drive.google.com/uc?export=view&id=FILE_ID
-// 4. Update the URLs above with the converted links
-
-// Recommended logo selection based on website color scheme:
-// - Dark logos (black/navy) for light backgrounds
-// - Light logos (white/transparent) for dark backgrounds  
-// - Logos with transparent backgrounds work best
-// - Consider logos that include "Hickory Bands" or "HHS" text
+// Logo usage strategy:
+// - Navigation: Full logo on desktop, short logo on mobile
+// - Footer: White logo for dark background
+// - Hero section: White logo over dark image overlay
+// - Light sections: Full black logo
