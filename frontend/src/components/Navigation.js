@@ -27,7 +27,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
+    <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -45,7 +45,7 @@ const Navigation = () => {
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
                     location.pathname === item.path
                       ? 'bg-primary-500 text-white'
-                      : 'text-gray-700 hover:bg-primary-500/10 hover:text-primary-600'
+                      : 'text-gray-800 hover:bg-primary-500/10 hover:text-primary-600'
                   }`}
                 >
                   {item.name}
@@ -58,7 +58,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 transition-colors duration-200"
+              className="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-primary-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 transition-colors duration-200"
               aria-label="Open main menu"
               aria-expanded={isOpen}
             >
