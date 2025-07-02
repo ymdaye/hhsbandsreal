@@ -11,6 +11,18 @@ import Parents from "./pages/Parents";
 import Payments from "./pages/Payments";
 import History from "./pages/History";
 
+// Fundraiser pages
+import Fundraisers from "./pages/Fundraisers";
+import CraftFair from "./pages/CraftFair";
+import GolfTournament from "./pages/GolfTournament";
+import HAwkwardAsk from "./pages/HAwkwardAsk";
+
+// Ensemble pages
+import SymphonicBand from "./pages/ensembles/SymphonicBand";
+import WindEnsemble from "./pages/ensembles/WindEnsemble";
+import MarchingBand from "./pages/ensembles/MarchingBand";
+import JazzBand from "./pages/ensembles/JazzBand";
+
 function App() {
   return (
     <div className="App">
