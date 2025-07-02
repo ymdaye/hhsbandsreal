@@ -16,7 +16,8 @@ const Navigation = () => {
       dropdown: [
         { name: 'History', path: '/history' },
         { name: 'Staff', path: '/staff' },
-        { name: 'Performance Groups', path: '/groups' }
+        { name: 'Performance Groups', path: '/groups' },
+        { name: 'Upcoming Events', path: '/#upcoming-events' }
       ]
     },
     { 
