@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CalendarDaysIcon, MapPinIcon, CurrencyDollarIcon, TrophyIcon, UserGroupIcon, ClockIcon } from '@heroicons/react/24/outline';
+import { CalendarDaysIcon, MapPinIcon, CurrencyDollarIcon, TrophyIcon, UserGroupIcon, ClockIcon, MusicalNoteIcon } from '@heroicons/react/24/outline';
 
 const SEVMG = () => {
   const judges = [
