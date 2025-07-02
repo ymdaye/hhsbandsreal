@@ -258,6 +258,8 @@ test_plan:
     - "Populate News page with latest band news and announcements"
     - "Implement Sponsors page with sponsor details and Ocean Storage logo integration"
     - "Integrate Ocean Storage logo on homepage with proper placement and linking"
+    - "Update hAwkward Ask page by removing Where Your Support Goes section"
+    - "Implement Navigation Header Dropdown Groups"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
