@@ -365,9 +365,6 @@ metadata:
 test_plan:
   current_focus:
     - "Page Navigation Scroll Fix"
-    - "Home Page Mobile Alignment"
-    - "Staff Page 2x2 Grid on Mobile"
-    - "Students Page Updates"
   stuck_tasks:
     - "Page Navigation Scroll Fix"
   test_all: false
