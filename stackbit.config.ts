@@ -101,6 +101,17 @@ export default defineStackbitConfig({
               {
                 name: 'email',
                 type: 'string'
+              },
+              {
+                name: 'logo',
+                type: 'image'
+              },
+              {
+                name: 'highlights',
+                type: 'list',
+                items: {
+                  type: 'string'
+                }
               }
             ]
           }
