@@ -215,6 +215,36 @@ frontend:
           agent: "testing"
           comment: "Ocean Storage logo is properly displayed on the homepage in the Proud Sponsor section. The Our Program Excellence section is also displayed correctly, and the BOA New Jersey photo is used in the hero section."
 
+  - task: "Update hAwkward Ask page by removing Where Your Support Goes section"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/HAwkwardAsk.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "Removed the 'Where Your Support Goes' section from the hAwkward Ask page."
+        - working: true
+          agent: "testing"
+          comment: "Verified that the 'Where Your Support Goes' section has been removed from the hAwkward Ask page. The page now flows directly from 'Why We Ask' to 'Student Message' and looks good without that section."
+
+  - task: "Implement Navigation Header Dropdown Groups"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/components/Navigation.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "Implemented dropdown menus for About, Parents, and Students sections in the navigation header."
+        - working: true
+          agent: "testing"
+          comment: "Navigation header dropdown groups are working correctly. The 'About' dropdown contains History, Staff, and Performance Groups; 'Parents' dropdown contains Payments and Fundraising; 'Students' dropdown contains Performance Groups and Students Login Page. All dropdowns work in both desktop and mobile views."
+
 metadata:
   created_by: "main_agent"
   version: "1.0"
