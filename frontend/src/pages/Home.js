@@ -29,16 +29,42 @@ const Home = () => {
       image: "https://images.pexels.com/photos/269140/pexels-photo-269140.jpeg"
     },
     {
-      title: "Elite Wind Ensemble",
-      description: "Our advanced wind ensemble represents the pinnacle of musical achievement at Hickory High School, featuring our most accomplished student musicians.",
+      title: "Winter Guard & Indoor Percussion",
+      description: "Our Winter Guard and Indoor Percussion programs thrive during the winter and spring months as they perform at competitions throughout Virginia, showcasing artistic excellence and technical precision.",
       icon: UserGroupIcon,
-      image: "https://images.pexels.com/photos/258846/pexels-photo-258846.jpeg"
+      image: "https://images.pexels.com/photos/6966502/pexels-photo-6966502.jpeg"
     }
   ];
 
   return (
     <div className="min-h-screen">
       <Hero {...heroData} />
+      
+      {/* Sponsors Section */}
+      <section className="py-12 bg-white border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Proud Sponsor</h2>
+          </div>
+          <div className="flex justify-center">
+            <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="https://hhsbands.org/wp-content/uploads/2024/03/Ocean-Storage-Logo-1.png"
+                alt="Ocean Storage - Proud Sponsor"
+                className="h-16 w-auto mx-auto"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'block';
+                }}
+              />
+              <div style={{ display: 'none' }} className="text-center">
+                <span className="text-lg font-bold text-primary-600">Ocean Storage</span>
+                <p className="text-sm text-gray-600">Proud Sponsor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       
       {/* Features Section */}
       <section className="py-20 bg-white">
@@ -50,11 +76,14 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Our Program Excellence
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Located in Chesapeake, Virginia, The Hickory High School Band is a multi-faceted program that includes superior-rated Concert Bands, Wind Ensemble, and an award-winning Marching Band.
+            <p className="text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed">
+              Located in Chesapeake, Virginia, The Hickory High School Band is a multi-faceted program that includes not only superior-rated Concert Bands and Wind Ensemble, but also an award-winning Marching Band. The Hickory Marching Hawks perform at all home football games, and enter multiple competitions each year. The Concert Bands put on several concerts and perform at Band Assessment each year. The Hickory Winter Guard and Indoor Percussion programs thrive during the winter and spring months as they perform at competitions throughout Virginia.
+            </p>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto mt-4">
+              Located in the Hampton Roads area of Southeast Virginia, Hickory High School is located 25 miles from downtown Norfolk with easy access to Naval Station Norfolk, NAS Oceana, Virginia Beach Oceanfront and other popular Virginia destinations.
             </p>
           </motion.div>
 
@@ -104,7 +133,7 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Latest News
             </h2>
           </motion.div>
@@ -117,16 +146,16 @@ const Home = () => {
               viewport={{ once: true }}
               className="bg-white rounded-2xl shadow-xl p-8"
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Spirit Wear Store Open!</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">2024 BOA Championship Success!</h3>
               <p className="text-gray-600 mb-6">
-                Our HHS Bands Spirit Wear store is open! Check out our new section specific shirts!!! 
-                Be sure and click details on each item to see all the options.
+                The Hickory Marching Hawks achieved an incredible 2nd place overall finish at the BOA New Jersey Regional Championship, 
+                showcasing months of dedication and hard work from our students and staff.
               </p>
               <Link
-                to="/spirit-wear"
+                to="/news"
                 className="inline-flex items-center px-6 py-3 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors duration-200"
               >
-                Shop Now
+                Read More News
               </Link>
             </motion.div>
 
