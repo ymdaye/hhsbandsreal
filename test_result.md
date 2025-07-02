@@ -309,7 +309,7 @@ frontend:
     implemented: true
     working: false
     file: "/app/frontend/src/App.js"
-    stuck_count: 1
+    stuck_count: 2
     priority: "high"
     needs_retesting: false
     status_history:
@@ -319,6 +319,9 @@ frontend:
         - working: false
           agent: "testing"
           comment: "Retested the ScrollToTop functionality and confirmed it's still not working. When scrolling to the bottom of the Join the Band page and then navigating to the Staff page, the new page loads at position 1227px instead of at the top. The ScrollToTop component in App.js needs to be fixed."
+        - working: false
+          agent: "testing"
+          comment: "Conducted comprehensive testing of the scroll fix implementation. The ScrollToTop component in App.js is still not working correctly. When navigating from Join the Band page (after scrolling down) to Staff page, the scroll position is maintained at around 1600px instead of resetting to 0. Multiple navigation tests between pages (Home → Join → Staff → News → SEVMG) showed inconsistent scroll behavior, with most pages not loading at the top. Browser back/forward navigation also showed issues: when going back to Home from Join, the scroll position was at 300px, and when going back to Staff from News, it was at 0px (inconsistent behavior). The issue persists on both desktop and mobile viewports."
 
   - task: "Home Page Mobile Alignment"
     implemented: true
