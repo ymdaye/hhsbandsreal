@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -14,7 +14,6 @@ import History from "./pages/History";
 import Students from "./pages/Students";
 import News from "./pages/News";
 import Sponsors from "./pages/Sponsors";
-import TestPage from "./pages/TestPage";
 
 // Fundraiser pages
 import Fundraisers from "./pages/Fundraisers";
