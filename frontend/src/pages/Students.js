@@ -356,9 +356,12 @@ const Students = () => {
                     ))}
                   </ul>
                   
-                  <button className="w-full mt-6 px-4 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-200">
+                  <Link 
+                    to={section.link}
+                    className="block w-full mt-6 px-4 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-200 text-center"
+                  >
                     Access {section.title} Resources
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
             ))}
