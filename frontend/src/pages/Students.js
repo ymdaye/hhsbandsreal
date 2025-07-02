@@ -61,28 +61,22 @@ const Students = () => {
 
   const quickLinks = [
     {
-      title: "Section Resources",
-      description: "Access section-specific materials and resources",
+      title: "Home",
+      description: "Return to the main homepage",
       icon: MusicalNoteIcon,
-      link: "#section-resources"
+      link: "/"
     },
     {
-      title: "Video Resources",
-      description: "Instructional videos and performance recordings",
-      icon: VideoCameraIcon,
-      link: "#videos"
-    },
-    {
-      title: "Itinerary & Schedule",
-      description: "Upcoming events, rehearsals, and important dates",
-      icon: CalendarDaysIcon,
-      link: "#schedule"
-    },
-    {
-      title: "Important Documents",
-      description: "Forms, handbooks, and essential information",
-      icon: DocumentTextIcon,
+      title: "HBPA",
+      description: "Hickory Band Parents Association information",
+      icon: UserGroupIcon,
       link: "/parents"
+    },
+    {
+      title: "Sponsors",
+      description: "View our generous sponsors and supporters",
+      icon: DocumentTextIcon,
+      link: "/sponsors"
     }
   ];
 
