@@ -19,24 +19,24 @@ const Gallery = ({ title, images }) => {
       caption: "BOA New Jersey Championship 2024"
     },
     {
-      src: "https://images.pexels.com/photos/269140/pexels-photo-269140.jpeg",
-      alt: "Concert Hall",
-      caption: "Concert Performance Venue"
-    },
-    {
-      src: "https://images.pexels.com/photos/258846/pexels-photo-258846.jpeg",
-      alt: "Performance Space",
-      caption: "Modern Performance Hall"
-    },
-    {
       src: "https://images.pexels.com/photos/2363674/pexels-photo-2363674.jpeg",
-      alt: "Band Members",
-      caption: "Band Members in Uniform"
+      alt: "Marching Band Performance",
+      caption: "Precision and Excellence in Performance"
     },
     {
-      src: "https://images.pexels.com/photos/4709822/pexels-photo-4709822.jpeg",
-      alt: "Saxophone Player",
-      caption: "Saxophone Performance"
+      src: "https://images.unsplash.com/photo-1638752096399-4b6a40939e21",
+      alt: "Marching Band in Formation",
+      caption: "Marching Band Visual Excellence"
+    },
+    {
+      src: "https://images.pexels.com/photos/7095726/pexels-photo-7095726.jpeg",
+      alt: "Concert Performance",
+      caption: "Concert Band Excellence"
+    },
+    {
+      src: "https://images.pexels.com/photos/11425205/pexels-photo-11425205.jpeg",
+      alt: "Student Musician",
+      caption: "Dedicated Student Musicians"
     }
   ];
 
