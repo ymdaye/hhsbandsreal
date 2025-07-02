@@ -48,6 +48,28 @@ collections:
             widget: "list"
             field: {label: "Highlight", name: "highlight", widget: "string"}
 
+  - name: "students"
+    label: "Students"
+    file: "src/content/students.json"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - label: "Campaign Info"
+        name: "campaignInfo"
+        widget: "object"
+        fields:
+          - {label: "Total Raised", name: "totalRaised", widget: "string"}
+          - {label: "Goal Amount", name: "goalAmount", widget: "string"}
+          - {label: "Progress Percentage", name: "progressPercentage", widget: "number"}
+          - {label: "Average Per Student", name: "averagePerStudent", widget: "string"}
+          - {label: "Participating Students", name: "participatingStudents", widget: "number"}
+      - label: "Quick Links"
+        name: "quickLinks"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Link", name: "link", widget: "string"}
+
   - name: "fundraisers"
     label: "Fundraisers"
     folder: "src/content/fundraisers"
