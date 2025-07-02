@@ -36,7 +36,8 @@ const Navigation = () => {
     },
     { name: 'News', path: '/news' },
     { name: 'Fundraisers', path: '/fundraisers' },
-    { name: 'SEVMG', path: '/sevmg' }
+    { name: 'SEVMG', path: '/sevmg' },
+    { name: 'Test', path: '/test' }
   ];
 
   const toggleMenu = () => {
