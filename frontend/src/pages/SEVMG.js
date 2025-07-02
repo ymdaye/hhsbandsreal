@@ -297,6 +297,107 @@ const SEVMG = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Volunteer Opportunities
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              The success of SEVMG heavily relies on volunteers. Join us in making this event exceptional!
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-xl shadow-lg p-6 text-center"
+            >
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mx-auto">
+                  <span className="text-white font-bold">🍕</span>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Concessions</h3>
+              <p className="text-gray-600 text-sm">Assisting with food preparation and sales during the event</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-xl shadow-lg p-6 text-center"
+            >
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mx-auto">
+                  <span className="text-white font-bold">🔧</span>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Pit Crew</h3>
+              <p className="text-gray-600 text-sm">Helping transport and set up equipment and props for performances</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-xl shadow-lg p-6 text-center"
+            >
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mx-auto">
+                  <span className="text-white font-bold">👥</span>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Chaperones</h3>
+              <p className="text-gray-600 text-sm">Supervising band members during the event</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-xl shadow-lg p-6 text-center"
+            >
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center mx-auto">
+                  <span className="text-white font-bold">☕</span>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Hospitality</h3>
+              <p className="text-gray-600 text-sm">Providing support in the hospitality tent for directors, bus drivers, and staff</p>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="text-center mt-12"
+          >
+            <p className="text-gray-600 mb-6">
+              Volunteer sign-ups are available through SignUpGenius. Specific links for SEVMG volunteer opportunities will be provided closer to the event date.
+            </p>
+            <a
+              href="mailto:contact@hhsbands.org"
+              className="inline-flex items-center px-8 py-4 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors duration-200"
+            >
+              Contact Us About Volunteering
+            </a>
+          </motion.div>
+        </div>
+      </section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Distinguished Judging Panel
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
