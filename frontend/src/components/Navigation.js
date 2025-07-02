@@ -68,7 +68,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-center space-x-1">
               {navItems.map((item) => (
                 <div key={item.name} className="relative">
                   {item.dropdown ? (
@@ -78,7 +78,7 @@ const Navigation = () => {
                       onMouseLeave={() => setOpenDropdown(null)}
                     >
                       <button
-                        className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center space-x-1 ${
+                        className={`px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center space-x-1 min-w-[100px] justify-center ${
                           isActiveDropdown(item.dropdown)
                             ? 'bg-primary-500 text-white'
                             : 'text-gray-800 hover:bg-primary-500/10 hover:text-primary-600'
@@ -118,7 +118,7 @@ const Navigation = () => {
                   ) : (
                     <Link
                       to={item.path}
-                      className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
+                      className={`px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 min-w-[100px] text-center inline-block ${
                         location.pathname === item.path
                           ? 'bg-primary-500 text-white'
                           : 'text-gray-800 hover:bg-primary-500/10 hover:text-primary-600'
