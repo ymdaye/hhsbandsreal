@@ -7,6 +7,9 @@
   NODE_VERSION = "18.18.2"
   YARN_VERSION = "1.22.22"
 
+[[plugins]]
+package = "@netlify/plugin-visual-editor"
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
@@ -25,4 +28,3 @@
 
 [context.branch-deploy.environment]
   REACT_APP_BACKEND_URL = "https://hhsbands-api.netlify.app"
-  
