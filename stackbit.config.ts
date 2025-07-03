@@ -1,4 +1,4 @@
-import { defineStackbitConfig } from '@stackbit/types';
+import { defineStackbitConfig, SiteMapEntry } from '@stackbit/types';
 
 export default defineStackbitConfig({
   stackbitVersion: '~0.6.0',
@@ -248,4 +248,17 @@ export default defineStackbitConfig({
       ]
     }
   ]
+siteMap: ({ documents, models }) => {
+    const pageModels = models.filter((m) => m.type === 'page');
+
+    return documents
+      .filter((doc) => pageModels.some((m) => m.name === doc.modelName))
+      .map((doc) => ({
+        stableId: doc.id,
+        urlPath: `/${doc.slug}`,
+        document: doc,
+        isHomePage: doc.slug === 'index' || doc.slug === ''
+      })) as SiteMapEntry[];
+  }
 });
+
