@@ -6,6 +6,7 @@ media_folder: "public/uploads"
 public_folder: "/uploads"
 
 collections:
+  # Folder-based collection: News posts
   - name: "news"
     label: "News"
     folder: "src/content/news"
@@ -14,3 +15,14 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  # File-based collection: Site Settings
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "src/content/settings/home.json"
+        fields:
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "string" }
