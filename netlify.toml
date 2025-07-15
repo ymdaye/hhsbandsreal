@@ -35,6 +35,11 @@ package = "@netlify/plugin-visual-editor"
   to = "/admin/index.html"
   status = 200
 
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
 [context.production.environment]
   REACT_APP_BACKEND_URL = "https://hhsbands-api.netlify.app"
 
